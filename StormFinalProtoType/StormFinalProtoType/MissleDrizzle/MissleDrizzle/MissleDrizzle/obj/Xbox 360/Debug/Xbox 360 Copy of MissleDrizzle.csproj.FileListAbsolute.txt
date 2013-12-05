@@ -1,0 +1,21 @@
+E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\PlayerStatic.xnb
+E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\SplashScreen.xnb
+E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\walksheet.xnb
+E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\PlayGround.xnb
+E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\BackGround.xnb
+E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\idol.xnb
+E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\Cannon.xnb
+E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\ball.xnb
+E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\pixelParticle.xnb
+E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\clouds.xnb
+E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\MainCloud.xnb
+E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\Blur.xnb
+E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\Sepia.xnb
+E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\Reflection.xnb
+E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\SpriteFont1.xnb
+E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\MissleDrizzle.exe
+E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\MissleDrizzle.pdb
+E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\obj\Xbox 360\Debug\Xbox 360 Copy of MissleDrizzle.csprojResolveAssemblyReference.cache
+E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\obj\Xbox 360\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\obj\Xbox 360\Debug\MissleDrizzle.exe
+E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\obj\Xbox 360\Debug\MissleDrizzle.pdb

@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>FPO\PlayerStatic.png</Source>
+      <Name>FPO\PlayerStatic</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\FPO\PlayerStatic.xnb</Output>
+      <Time>2013-10-13T02:13:26-04:00</Time>
+    </Item>
+    <Item>
+      <Source>FPO\SplashScreen.png</Source>
+      <Name>FPO\SplashScreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\FPO\SplashScreen.xnb</Output>
+      <Time>2013-10-12T19:48:50-04:00</Time>
+    </Item>
+    <Item>
+      <Source>FPO\walksheet.png</Source>
+      <Name>FPO\walksheet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\FPO\walksheet.xnb</Output>
+      <Time>2013-11-19T20:32:17.4922567-05:00</Time>
+    </Item>
+    <Item>
+      <Source>FPO\PlayGround.png</Source>
+      <Name>FPO\PlayGround</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\FPO\PlayGround.xnb</Output>
+      <Time>2013-11-17T00:34:53.0710502-05:00</Time>
+    </Item>
+    <Item>
+      <Source>FPO\BackGround.png</Source>
+      <Name>FPO\BackGround</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\FPO\BackGround.xnb</Output>
+      <Time>2013-11-16T15:32:29.2309908-05:00</Time>
+    </Item>
+    <Item>
+      <Source>FPO\idol.png</Source>
+      <Name>FPO\idol</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\FPO\idol.xnb</Output>
+      <Time>2013-11-19T20:35:37.4972552-05:00</Time>
+    </Item>
+    <Item>
+      <Source>FPO\Cannon.png</Source>
+      <Name>FPO\Cannon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\FPO\Cannon.xnb</Output>
+      <Time>2013-11-19T20:39:36.2201251-05:00</Time>
+    </Item>
+    <Item>
+      <Source>FPO\ball.png</Source>
+      <Name>FPO\ball</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\FPO\ball.xnb</Output>
+      <Time>2013-11-17T00:46:15.8804872-05:00</Time>
+    </Item>
+    <Item>
+      <Source>FPO\pixelParticle.png</Source>
+      <Name>FPO\pixelParticle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\FPO\pixelParticle.xnb</Output>
+      <Time>2013-11-05T19:52:20.4561473-05:00</Time>
+    </Item>
+    <Item>
+      <Source>FPO\clouds.png</Source>
+      <Name>FPO\clouds</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\FPO\clouds.xnb</Output>
+      <Time>2013-11-13T00:20:37.4226831-05:00</Time>
+    </Item>
+    <Item>
+      <Source>FPO\MainCloud.png</Source>
+      <Name>FPO\MainCloud</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\FPO\MainCloud.xnb</Output>
+      <Time>2013-11-13T00:15:29.2145651-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Blur.fx</Source>
+      <Name>Blur</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\Blur.xnb</Output>
+      <Time>2013-10-23T16:33:16-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sepia.fx</Source>
+      <Name>Sepia</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\Sepia.xnb</Output>
+      <Time>2013-11-19T19:32:56.5035088-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Reflection.fx</Source>
+      <Name>Reflection</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\Reflection.xnb</Output>
+      <Time>2013-10-23T17:24:54-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SpriteFont1.spritefont</Source>
+      <Name>SpriteFont1</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\SpriteFont1.xnb</Output>
+      <Time>2013-10-23T17:32:16-04:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzleContent\</RootDirectory>
+      <LoggerRootDirectory>E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\</LoggerRootDirectory>
+      <IntermediateDirectory>E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzleContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2013-05-12T16:54:08.1664023-04:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>
