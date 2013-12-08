@@ -59,6 +59,10 @@
     <XnaCompressContent>true</XnaCompressContent>
   </PropertyGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\MDDataLibrary\Xbox 360 Copy of MDDataLibrary.csproj">
+      <Project>{D2A76FD8-BE09-4E22-8C24-6439471C6451}</Project>
+      <Name>Xbox 360 Copy of MDDataLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MissleDrizzleContent\MissleDrizzleContent.contentproj">
       <Name>MissleDrizzleContent</Name>
       <XnaReferenceType>Content</XnaReferenceType>

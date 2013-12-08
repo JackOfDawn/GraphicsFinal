@@ -133,6 +133,10 @@
     <Content Include="GameThumbnail.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\MDDataLibrary\MDDataLibrary.csproj">
+      <Project>{eec3b61f-8edc-434a-85ef-2dc155c79d48}</Project>
+      <Name>MDDataLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MissleDrizzleContent\MissleDrizzleContent.contentproj">
       <Name>MissleDrizzleContent</Name>
       <XnaReferenceType>Content</XnaReferenceType>

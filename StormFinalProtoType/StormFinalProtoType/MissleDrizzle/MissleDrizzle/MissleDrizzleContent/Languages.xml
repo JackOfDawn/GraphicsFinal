@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XnaContent>
+	<Asset Type="MDDataLibrary.Menu[]">
+		<Item>
+			<splash_Title>Missle Drizzle</splash_Title>
+			<menu_Play>Play</menu_Play>
+			<menu_Controls>Controls</menu_Controls>
+			<menu_Language>Umstellung Sprache</menu_Language>
+			<menu_Credits>Credits</menu_Credits>
+			<menu_Quit>Quit</menu_Quit>
+			<pause_Resume>Resume</pause_Resume>
+			<pause_Controls>Controls</pause_Controls>
+			<pause_Quit>End</pause_Quit>
+		</Item>
+		<Item>
+			<splash_Title>Missle Drizzle</splash_Title>
+			<menu_Play>Spielen</menu_Play>
+			<menu_Controls>Steuerung</menu_Controls>
+			<menu_Language>Switch Language</menu_Language>
+			<menu_Credits>Akkreditiv</menu_Credits>
+			<menu_Quit>Abtritt</menu_Quit>
+			<pause_Resume>Fortsetzen</pause_Resume>
+			<pause_Controls>Steuerung</pause_Controls>
+			<pause_Quit>Ende</pause_Quit>
+		</Item>
+	</Asset>
+</XnaContent>

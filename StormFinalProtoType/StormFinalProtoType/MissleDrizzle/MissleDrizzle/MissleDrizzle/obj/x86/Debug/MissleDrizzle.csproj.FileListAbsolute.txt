@@ -96,3 +96,27 @@ F:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\M
 F:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\obj\x86\Debug\MissleDrizzle.pdb
 E:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\FPO\PlayGround.xnb
 D:\~SCHOOL\FINAL PROJECT\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\FPO\PlayGround.xnb
+C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\obj\x86\Debug\MissleDrizzle.exe
+C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\obj\x86\Debug\MissleDrizzle.pdb
+C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\obj\x86\Debug\MissleDrizzle.csprojResolveAssemblyReference.cache
+C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\FPO\PlayerStatic.xnb
+C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\FPO\SplashScreen.xnb
+C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\FPO\walksheet.xnb
+C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\FPO\PlayGround.xnb
+C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\FPO\BackGround.xnb
+C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\FPO\idol.xnb
+C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\FPO\Cannon.xnb
+C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\FPO\ball.xnb
+C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\FPO\pixelParticle.xnb
+C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\FPO\clouds.xnb
+C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\FPO\MainCloud.xnb
+C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\Blur.xnb
+C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\Sepia.xnb
+C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\Reflection.xnb
+C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\SpriteFont1.xnb
+C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\Languages.xnb
+C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\MissleDrizzle.exe
+C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\MissleDrizzle.pdb
+C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\MDDataLibrary.dll
+C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\MDDataLibrary.pdb

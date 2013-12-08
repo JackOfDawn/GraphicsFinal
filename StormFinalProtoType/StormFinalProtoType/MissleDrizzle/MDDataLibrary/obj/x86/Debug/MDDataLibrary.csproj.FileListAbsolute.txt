@@ -1,0 +1,6 @@
+C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MDDataLibrary\bin\x86\Debug\MDDataLibrary.dll
+C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MDDataLibrary\bin\x86\Debug\MDDataLibrary.pdb
+C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MDDataLibrary\obj\x86\Debug\MDDataLibrary.csprojResolveAssemblyReference.cache
+C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MDDataLibrary\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MDDataLibrary\obj\x86\Debug\MDDataLibrary.dll
+C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MDDataLibrary\obj\x86\Debug\MDDataLibrary.pdb

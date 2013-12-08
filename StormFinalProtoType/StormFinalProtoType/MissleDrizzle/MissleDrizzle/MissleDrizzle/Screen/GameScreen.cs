@@ -110,6 +110,7 @@ namespace MissileDrizzle.Screen
             mCourt.createSprite(tmpTexture, new Rectangle(0, 0, 1280, 720));
             
             attachListeners();
+           
         }
 
         public void attachListeners()

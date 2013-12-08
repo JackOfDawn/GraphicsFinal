@@ -66,7 +66,7 @@ namespace MissileDrizzle.Manager
 
             ///centerCoordParam = blurEffect.Parameters["fCenter"];
 
-            mCurrentState = mNextState = SCREEN_STATES.GAME_SCREEN;
+            mCurrentState = mNextState = SCREEN_STATES.SPLASH_SCREEN;
             changeScreen = false;
             mContent = content;
             mGraphics = pGraphics;

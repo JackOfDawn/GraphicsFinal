@@ -1,0 +1,8 @@
+C:\Users\JackStorm\Desktop\GraphicsFinal\MDContentLoader\MDContentLoader\bin\Debug\MDContentLoader.exe.config
+C:\Users\JackStorm\Desktop\GraphicsFinal\MDContentLoader\MDContentLoader\bin\Debug\MDContentLoader.exe
+C:\Users\JackStorm\Desktop\GraphicsFinal\MDContentLoader\MDContentLoader\bin\Debug\MDContentLoader.pdb
+C:\Users\JackStorm\Desktop\GraphicsFinal\MDContentLoader\MDContentLoader\obj\Debug\MDContentLoader.csprojResolveAssemblyReference.cache
+C:\Users\JackStorm\Desktop\GraphicsFinal\MDContentLoader\MDContentLoader\obj\Debug\MDContentLoader.Properties.Resources.resources
+C:\Users\JackStorm\Desktop\GraphicsFinal\MDContentLoader\MDContentLoader\obj\Debug\MDContentLoader.csproj.GenerateResource.Cache
+C:\Users\JackStorm\Desktop\GraphicsFinal\MDContentLoader\MDContentLoader\obj\Debug\MDContentLoader.exe
+C:\Users\JackStorm\Desktop\GraphicsFinal\MDContentLoader\MDContentLoader\obj\Debug\MDContentLoader.pdb
