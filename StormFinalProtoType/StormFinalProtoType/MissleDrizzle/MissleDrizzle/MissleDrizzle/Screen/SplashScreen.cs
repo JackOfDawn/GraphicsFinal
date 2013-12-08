@@ -16,7 +16,7 @@ namespace MissileDrizzle.Screen
             mTimeElapsed;
         private const double
             MAX_TIME = 3000; //MILLISECONDS
-        private SpriteFont Test;
+        ///private SpriteFont Test;
 
         public SplashScreen(EventHandler TheScreenEvent, GraphicsDevice graphics)
             : base(TheScreenEvent, graphics)
@@ -28,9 +28,9 @@ namespace MissileDrizzle.Screen
         {
             mBackGround = content.Load<Texture2D>("FPO/SplashScreen");
             mTimeElapsed = MAX_TIME;
-            Test = content.Load<SpriteFont>("SpriteFont1");
+            //Test = content.Load<SpriteFont>("SpriteFont1");
             loadLanguages(content);
-            mCurrentLanguage = Languages.German;
+            //mCurrentLanguage = Languages.German;
             //Rectangle sourceRect = new Rectangle(0, 0, tempTexture.Width, tempTexture.Height);
             //mBackGround.createSprite(tempTexture, sourceRect);
         }
@@ -51,7 +51,7 @@ namespace MissileDrizzle.Screen
         {
             pSpriteBatch.Begin();
             pSpriteBatch.Draw(mBackGround, Vector2.Zero, Color.White);
-            pSpriteBatch.DrawString(Test, mMainLanguage[(int)mCurrentLanguage].pause_Controls, Vector2.Zero, Color.White);
+            //pSpriteBatch.DrawString(Test, mMainLanguage[(int)mCurrentLanguage].pause_Controls, Vector2.Zero, Color.White);
             pSpriteBatch.End();
         }
         
