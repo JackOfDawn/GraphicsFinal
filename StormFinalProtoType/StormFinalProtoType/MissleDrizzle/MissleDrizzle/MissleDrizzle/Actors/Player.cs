@@ -62,11 +62,11 @@ namespace MissileDrizzle.Actors
 
         public void init(ContentManager content)
         {
-            Texture2D tmpTexture = content.Load<Texture2D>("FPO/walksheet");
+            Texture2D tmpTexture = content.Load<Texture2D>("FPO/walksheet2");
             //mStaticSprite.createSprite(tmpTexture, new Rectangle(0, 0, tmpTexture.Width, tmpTexture.Height));
             mWalkingAnimation.createAnimation(tmpTexture, 8, 84, 112, 100);
 
-            tmpTexture = content.Load<Texture2D>("FPO/idol");
+            tmpTexture = content.Load<Texture2D>("FPO/idol2");
             mIdleAnimation.createAnimation(tmpTexture, 1, 84, 112, 100);
 
             tmpTexture = content.Load<Texture2D>("FPO/cannon");

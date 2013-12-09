@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\FPO\SplashScreen.xnb</Output>
-      <Time>2013-12-07T15:58:05.7971818-05:00</Time>
+      <Time>2013-12-08T21:08:45.8405783-05:00</Time>
     </Item>
     <Item>
       <Source>FPO\walksheet.png</Source>
@@ -62,7 +62,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\FPO\Cannon.xnb</Output>
-      <Time>2013-12-07T15:58:05.7881812-05:00</Time>
+      <Time>2013-12-08T19:51:11.4973651-05:00</Time>
     </Item>
     <Item>
       <Source>FPO\ball.png</Source>
@@ -101,13 +101,31 @@
       <Time>2013-12-07T15:58:05.7941816-05:00</Time>
     </Item>
     <Item>
-      <Source>Blur.fx</Source>
-      <Name>Blur</Name>
-      <Importer>EffectImporter</Importer>
-      <Processor>EffectProcessor</Processor>
+      <Source>NOISE\noise1.png</Source>
+      <Name>NOISE\noise1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\Blur.xnb</Output>
-      <Time>2013-12-07T15:58:05.7511791-05:00</Time>
+      <Output>C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\NOISE\noise1.xnb</Output>
+      <Time>2013-12-08T15:14:43.7355994-05:00</Time>
+    </Item>
+    <Item>
+      <Source>NOISE\noise2.png</Source>
+      <Name>NOISE\noise2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\NOISE\noise2.xnb</Output>
+      <Time>2013-12-08T15:15:24.953957-05:00</Time>
+    </Item>
+    <Item>
+      <Source>NOISE\noise3.png</Source>
+      <Name>NOISE\noise3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\NOISE\noise3.xnb</Output>
+      <Time>2013-12-08T15:17:17.0113663-05:00</Time>
     </Item>
     <Item>
       <Source>Sepia.fx</Source>
@@ -116,16 +134,16 @@
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\Sepia.xnb</Output>
-      <Time>2013-12-07T15:58:05.8131827-05:00</Time>
+      <Time>2013-12-08T19:15:38.59337-05:00</Time>
     </Item>
     <Item>
-      <Source>Reflection.fx</Source>
-      <Name>Reflection</Name>
+      <Source>Noise.fx</Source>
+      <Name>Noise</Name>
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\Reflection.xnb</Output>
-      <Time>2013-12-07T15:58:05.8101825-05:00</Time>
+      <Output>C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\Noise.xnb</Output>
+      <Time>2013-12-08T19:11:22.7517367-05:00</Time>
     </Item>
     <Item>
       <Source>SpriteFont1.spritefont</Source>
@@ -144,6 +162,33 @@
       <Options>None</Options>
       <Output>C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\Languages.xnb</Output>
       <Time>2013-12-07T21:26:01.0331527-05:00</Time>
+    </Item>
+    <Item>
+      <Source>FPO\MenuScreen.png</Source>
+      <Name>FPO\MenuScreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\FPO\MenuScreen.xnb</Output>
+      <Time>2013-12-08T20:41:41.0096433-05:00</Time>
+    </Item>
+    <Item>
+      <Source>FPO\walksheet2.png</Source>
+      <Name>FPO\walksheet2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\FPO\walksheet2.xnb</Output>
+      <Time>2013-12-08T21:35:49.5184474-05:00</Time>
+    </Item>
+    <Item>
+      <Source>FPO\idol2.png</Source>
+      <Name>FPO\idol2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\FPO\idol2.xnb</Output>
+      <Time>2013-12-08T21:28:54.0286827-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -183,7 +228,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MDDataLibrary\bin\x86\Debug\MDDataLibrary.dll</Key>
-        <Value>2013-12-07T21:28:24.0337821-05:00</Value>
+        <Value>2013-12-08T16:01:28.5110234-05:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>

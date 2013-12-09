@@ -38,9 +38,6 @@ technique Technique1
 {
     pass PO
     {
-        // TODO: set renderstates here.
-
-        //VertexShader = compile vs_2_0 VertexShaderFunction();
         PixelShader = compile ps_2_0 SepiaFunction();
     }
 }

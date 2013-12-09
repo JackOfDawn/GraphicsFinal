@@ -41,6 +41,8 @@ namespace MissileDrizzle.Manager
             mSplashScreen;
         GameScreen
             mGameScreen;
+        MainMenuScreen
+            mMenuScreen;
 
         ContentManager
             mContent;
@@ -54,9 +56,15 @@ namespace MissileDrizzle.Manager
 
         //effects
         Effect
-            blurEffect,
-            SepiaEffect,
-            ReflectionEffect;
+            noiseEffect,
+            SepiaEffect;
+        EffectParameter
+            noiseFilter,
+            blackLine;
+        int 
+            noise;
+        Texture2D[] TempNoise;
+        Random rand;
 
         public bool
             changeScreen { get; private set; }
@@ -76,6 +84,7 @@ namespace MissileDrizzle.Manager
             
             mSplashScreen = new SplashScreen(new EventHandler(SplashScreenEvent), pGraphics);
             mGameScreen = new GameScreen(new EventHandler(GameScreenEvent), pGraphics);
+            mMenuScreen = new MainMenuScreen(new EventHandler(MenuScreenEvent), pGraphics);
 
             //mCurrentScreen = mGameScreen
             
@@ -85,9 +94,18 @@ namespace MissileDrizzle.Manager
             mGraphics.SetRenderTarget(tempRenderTargetOne);
 
             //effects
-            blurEffect = content.Load<Effect>("Blur");
+            noiseEffect = content.Load<Effect>("Noise");
             SepiaEffect = content.Load<Effect>("Sepia");
-            ReflectionEffect = content.Load<Effect>("Reflection");
+
+            noiseFilter = noiseEffect.Parameters["noisefilter"];
+            blackLine = noiseEffect.Parameters["blkLine"];
+
+            TempNoise = new Texture2D[3];
+            TempNoise[0] = content.Load<Texture2D>("NOISE/noise1");
+            TempNoise[1] = content.Load<Texture2D>("NOISE/noise2");
+            TempNoise[2] = content.Load<Texture2D>("NOISE/noise3");
+            rand = new Random();
+            noise = 0;
             
 
         }
@@ -96,6 +114,7 @@ namespace MissileDrizzle.Manager
         {
             mSplashScreen.init(mContent);
             mGameScreen.init(mContent);
+            mMenuScreen.init(mContent);
         }
 
         public void update(GameTime pGameTime)
@@ -109,11 +128,16 @@ namespace MissileDrizzle.Manager
                 case SCREEN_STATES.GAME_SCREEN:
                     mCurrentScreen = mGameScreen;
                     break;
+                case SCREEN_STATES.MENU_SCREEN:
+                    mCurrentScreen = mMenuScreen;
+                    break;
             }
 
             mCurrentScreen.update(pGameTime);
 
-
+            noise = (noise + 1) % 3;
+            noiseFilter.SetValue(TempNoise[noise]);
+            blackLine.SetValue(rand.Next(0,100) / 100.0f);
             
             
         }
@@ -135,7 +159,7 @@ namespace MissileDrizzle.Manager
 
             pSpriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend);
             //Apply first Effect
-            //blurEffect.CurrentTechnique.Passes[0].Apply();
+            noiseEffect.CurrentTechnique.Passes[0].Apply();
             //Draw first buffer Texture to second buffer
             pSpriteBatch.Draw(tempRenderTargetOne, Vector2.Zero, Color.White);
             pSpriteBatch.End();
@@ -146,7 +170,7 @@ namespace MissileDrizzle.Manager
 
             pSpriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend);
             //Apply second Effect
-            //SepiaEffect.CurrentTechnique.Passes[0].Apply();
+            SepiaEffect.CurrentTechnique.Passes[0].Apply();
 
             //Draw Second buffer to first buffer
             pSpriteBatch.Draw(tempRenderTargetTwo, Vector2.Zero, Color.White);  //WHY U NO WORK?
@@ -156,9 +180,16 @@ namespace MissileDrizzle.Manager
             
         }
         
+        //Screen Events
+
         public void SplashScreenEvent( object obj, EventArgs e)
         {
-            mCurrentState = SCREEN_STATES.GAME_SCREEN;
+            mCurrentState = SCREEN_STATES.MENU_SCREEN;
+        }
+
+        public void MenuScreenEvent(object obj, EventArgs e)
+        {
+            mGameScreen.init(mContent);
         }
 
         public void GameScreenEvent(object obj, EventArgs e)

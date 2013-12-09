@@ -86,6 +86,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="Screen\GameScreen.cs" />
+    <Compile Include="Screen\MainMenuScreen.cs" />
     <Compile Include="Screen\ScreenState.cs" />
     <Compile Include="Screen\SplashScreen.cs" />
     <Compile Include="Sprite.cs" />

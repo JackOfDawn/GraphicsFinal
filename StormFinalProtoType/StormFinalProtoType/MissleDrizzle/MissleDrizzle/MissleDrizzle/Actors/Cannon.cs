@@ -41,10 +41,10 @@ namespace MissileDrizzle.Actors
 
             mRotationRight = 0.0f;
             //mRotationLeft = (float)Math.PI;
-            mScale = 1.25f;
+            //mScale = 1.25f;
             mPos = Vector2.Zero;
             //isFacingRight = true;
-            mCannonSprite.updateScale(mScale);
+            //mCannonSprite.updateScale(mScale);
             if (!isFacingRight)
             {
                 mRealRotation = (float)Math.PI;
