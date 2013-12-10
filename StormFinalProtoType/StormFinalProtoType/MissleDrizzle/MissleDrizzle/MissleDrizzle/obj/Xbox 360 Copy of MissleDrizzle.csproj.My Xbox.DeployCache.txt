@@ -8,7 +8,7 @@ C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType
 C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\MDDataLibrary.dll
 2013-12-10T19:38:06.0403532Z
 C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\MissleDrizzle.exe
-2013-12-10T19:38:23.1973345Z
+2013-12-10T21:17:25.8222332Z
 C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\Languages.xnb
 2013-12-10T19:38:22.8773162Z
 C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\MenuFont.xnb
@@ -25,6 +25,8 @@ C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType
 2013-12-10T19:38:10.9596346Z
 C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\clouds.xnb
 2013-12-10T19:38:11.4686637Z
+C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\Controls.xnb
+2013-12-10T21:17:25.5012149Z
 C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\Cursor.xnb
 2013-12-10T19:38:22.6243018Z
 C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\idol.xnb

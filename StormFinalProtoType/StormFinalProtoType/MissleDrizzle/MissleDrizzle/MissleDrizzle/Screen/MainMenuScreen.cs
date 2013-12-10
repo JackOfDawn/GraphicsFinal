@@ -20,12 +20,18 @@ namespace MissileDrizzle.Screen
         Quit
     };
 
+    
+
     class MainMenuScreen : ScreenState
     {
         Background
             mBG;
         Texture2D
-            mCourts;
+            mCourts,
+            mControls;
+        Vector2
+            SCREEN_POS = new Vector2(496, 130);
+
         Sprite
             mCursor;
         Vector2[]
@@ -36,6 +42,21 @@ namespace MissileDrizzle.Screen
             mSelection;
         InputManager
             mMenuManager;
+
+        enum SHOW
+        {
+            MENU = 0,
+            CONTROLS,
+            CREDITS
+        };
+
+        private SHOW
+            show;
+        float 
+            showTime;
+        const float 
+            MAX_SHOW_TIME = 3000;
+        
         
 
         
@@ -44,12 +65,15 @@ namespace MissileDrizzle.Screen
         {
             mBG = new Background();
             mCursor = new Sprite();
-            mSelectionLocations = new Vector2[5];
+            mSelectionLocations = new Vector2[7];
             mSelectionLocations[0] = new Vector2(515, 145);
             mSelectionLocations[1] = new Vector2(515, 165);
             mSelectionLocations[2] = new Vector2(515, 185);
             mSelectionLocations[3] = new Vector2(515, 205);
             mSelectionLocations[4] = new Vector2(515, 225);
+            mSelectionLocations[5] = new Vector2(515, 245);
+            mSelectionLocations[6] = new Vector2(515, 265);
+            //mSelectionLocations[7] = new Vector2(515, 285);
         }
 
         public override void init(ContentManager content)
@@ -64,9 +88,12 @@ namespace MissileDrizzle.Screen
             mBG.init(content);
             mCursor.createSprite(temp, new Rectangle(0,0,temp.Width, temp.Height));
             mCourts = content.Load<Texture2D>("FPO/MenuScreen");
+            mControls = content.Load<Texture2D>("FPO/Controls");
 
             mSelection = 0;
             mCursorLocation = new Vector2(mSelectionLocations[mSelection].X - 18, mSelectionLocations[mSelection].Y);
+
+            showTime = MAX_SHOW_TIME;
         }
 
         private void addListeners()
@@ -104,6 +131,7 @@ namespace MissileDrizzle.Screen
                     break;
 
                 case (int)MenuSelections.Controls:
+                    show = SHOW.CONTROLS;
                     break;
 
                 case (int)MenuSelections.Language:
@@ -114,6 +142,7 @@ namespace MissileDrizzle.Screen
                     break;
 
                 case (int)MenuSelections.Credits:
+                    show = SHOW.CREDITS;
                     break;
 
                 case (int)MenuSelections.Quit:
@@ -124,9 +153,35 @@ namespace MissileDrizzle.Screen
 
         public override void update(GameTime pGameTime)
         {
-            mMenuManager.update(pGameTime);
+            
             mBG.update(pGameTime);
-            mCursor.updatePos(mCursorLocation);
+            
+
+            switch(show)
+            {
+                case SHOW.MENU:
+                    mMenuManager.update(pGameTime);
+                    mCursor.updatePos(mCursorLocation);
+                    break;
+
+                case SHOW.CONTROLS:
+                    showTime = showTime - pGameTime.ElapsedGameTime.Milliseconds;
+                    if (showTime < 0)
+                    {
+                        show = SHOW.MENU;
+                        showTime = MAX_SHOW_TIME;
+                    }
+                    break;
+                case SHOW.CREDITS:
+
+                    showTime = showTime - pGameTime.ElapsedGameTime.Milliseconds;
+                    if (showTime < 0)
+                    {
+                        show = SHOW.MENU;
+                        showTime = MAX_SHOW_TIME;
+                    }
+                    break;
+            }
            
             
         }
@@ -138,12 +193,30 @@ namespace MissileDrizzle.Screen
             pSpriteBatch.Draw(mCourts, Vector2.Zero, Color.White);
 
             //Main Menu
-            pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].menu_Play, mSelectionLocations[0], Color.White);
-            pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].menu_Controls, mSelectionLocations[1], Color.White);
-            pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].menu_Language, mSelectionLocations[2], Color.White);
-            pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].menu_Credits, mSelectionLocations[3], Color.White);
-            pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].menu_Quit, mSelectionLocations[4], Color.White);
-            mCursor.drawZeroOrigin(pSpriteBatch, SpriteEffects.None);
+            switch (show)
+            {
+                case SHOW.MENU:
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].menu_Play, mSelectionLocations[0], Color.White);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].menu_Controls, mSelectionLocations[1], Color.White);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].menu_Language, mSelectionLocations[2], Color.White);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].menu_Credits, mSelectionLocations[3], Color.White);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].menu_Quit, mSelectionLocations[4], Color.White);
+                    mCursor.drawZeroOrigin(pSpriteBatch, SpriteEffects.None);
+                    break;
+
+                     
+                case SHOW.CONTROLS:
+                    pSpriteBatch.Draw(mControls, SCREEN_POS, Color.White);
+                    break;
+
+
+                case SHOW.CREDITS:
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].credits_Programmer, mSelectionLocations[0], Color.White);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].credits_ProgrammerName, mSelectionLocations[1], Color.White);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].credits_Artist, mSelectionLocations[3], Color.White);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].credits_ArtistName, mSelectionLocations[4], Color.White);
+                    break;
+            }
 
             //Credits
 

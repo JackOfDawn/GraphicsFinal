@@ -199,6 +199,15 @@
       <Output>C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\Languages.xnb</Output>
       <Time>2013-12-10T14:37:02.4537163-05:00</Time>
     </Item>
+    <Item>
+      <Source>FPO\Controls.png</Source>
+      <Name>FPO\Controls</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\FPO\Controls.xnb</Output>
+      <Time>2013-12-10T16:16:32.6691931-05:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
