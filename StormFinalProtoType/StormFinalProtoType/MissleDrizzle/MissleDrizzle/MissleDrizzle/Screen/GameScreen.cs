@@ -61,7 +61,7 @@ namespace MissileDrizzle.Screen
 
         //float count = 1.0f;
 
-        SpriteFont FONT;
+        //SpriteFont FONT;
 
         public GameScreen(EventHandler TheScreenEvent, GraphicsDevice pGraphics)
             : base(TheScreenEvent, pGraphics)
@@ -101,11 +101,11 @@ namespace MissileDrizzle.Screen
             mParticleManager.loadContent(content);
             mBallManager.loadBall(content);
 
-            FONT = content.Load<SpriteFont>("SpriteFont1");
+            //FONT = content.Load<SpriteFont>("SpriteFont1");
 
             Texture2D tmpTexture = content.Load<Texture2D>("FPO/BackGround");
-            mBackground.createSprite(tmpTexture, new Rectangle(0, 0, 640, 380));
-            mBackground.updateScale(2.0f);
+            mBackground.createSprite(tmpTexture, new Rectangle(0, 0, 1280, 720));
+            //mBackground.updateScale(2.0f);
             tmpTexture = content.Load<Texture2D>("FPO/PlayGround");
             mCourt.createSprite(tmpTexture, new Rectangle(0, 0, 1280, 720));
             
@@ -231,12 +231,13 @@ namespace MissileDrizzle.Screen
 
             mParticleManager.draw(pSpriteBatch);
 
+            /*
             string tmpString = "MAX PARTICLE COUNT " + mParticleManager.ParticleCount;
             pSpriteBatch.DrawString(FONT, tmpString, new Vector2(0,0), Color.Black);
 
             tmpString = "ALIVE PARTICLE COUNT " + mParticleManager.ParticleCountAlive;
             pSpriteBatch.DrawString(FONT, tmpString, new Vector2(0, 50), Color.Black);
-
+            */
             pSpriteBatch.End();
 
             

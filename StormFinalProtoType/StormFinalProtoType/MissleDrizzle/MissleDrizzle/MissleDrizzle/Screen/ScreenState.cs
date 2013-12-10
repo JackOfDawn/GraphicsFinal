@@ -26,6 +26,8 @@ namespace MissileDrizzle.Screen
             mMainLanguage;
         static protected Languages
             mCurrentLanguage;
+        static protected SpriteFont
+            mMainFont;
 
         public ScreenState(EventHandler TheScreenEvent, GraphicsDevice pGraphics)
         {
@@ -37,6 +39,7 @@ namespace MissileDrizzle.Screen
         public void loadLanguages(ContentManager content)
         {
             mMainLanguage = content.Load<Menu[]>("Languages");
+            mMainFont = content.Load<SpriteFont>("MenuFont");
         }
 
         public virtual void init(ContentManager content) { }

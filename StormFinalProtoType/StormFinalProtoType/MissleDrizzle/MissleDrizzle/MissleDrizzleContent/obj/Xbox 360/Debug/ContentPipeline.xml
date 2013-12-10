@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\SplashScreen.xnb</Output>
-      <Time>2013-12-07T15:58:05.7971818-05:00</Time>
+      <Time>2013-12-08T21:08:45.8405783-05:00</Time>
     </Item>
     <Item>
       <Source>FPO\walksheet.png</Source>
@@ -44,7 +44,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\BackGround.xnb</Output>
-      <Time>2013-12-07T23:10:20.2853143-05:00</Time>
+      <Time>2013-12-10T12:56:26.5424819-05:00</Time>
     </Item>
     <Item>
       <Source>FPO\idol.png</Source>
@@ -134,7 +134,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\MenuScreen.xnb</Output>
-      <Time>2013-12-08T20:41:41.0096433-05:00</Time>
+      <Time>2013-12-10T12:55:19.7936641-05:00</Time>
     </Item>
     <Item>
       <Source>Sepia.fx</Source>
@@ -155,15 +155,6 @@
       <Time>2013-12-08T19:11:22.7517367-05:00</Time>
     </Item>
     <Item>
-      <Source>SpriteFont1.spritefont</Source>
-      <Name>SpriteFont1</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\SpriteFont1.xnb</Output>
-      <Time>2013-12-07T22:43:42.0352416-05:00</Time>
-    </Item>
-    <Item>
       <Source>Languages.xml</Source>
       <Name>Languages</Name>
       <Importer>XmlImporter</Importer>
@@ -171,6 +162,33 @@
       <Options>None</Options>
       <Output>C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\Languages.xnb</Output>
       <Time>2013-12-07T21:26:01.0331527-05:00</Time>
+    </Item>
+    <Item>
+      <Source>FPO\walksheet2.png</Source>
+      <Name>FPO\walksheet2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\walksheet2.xnb</Output>
+      <Time>2013-12-08T21:35:49.5184474-05:00</Time>
+    </Item>
+    <Item>
+      <Source>FPO\idol2.png</Source>
+      <Name>FPO\idol2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\idol2.xnb</Output>
+      <Time>2013-12-08T21:28:54.0286827-05:00</Time>
+    </Item>
+    <Item>
+      <Source>MenuFont.spritefont</Source>
+      <Name>MenuFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\MenuFont.xnb</Output>
+      <Time>2013-12-07T22:43:42.0352416-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
