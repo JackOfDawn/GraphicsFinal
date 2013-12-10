@@ -8,8 +8,10 @@ namespace MDDataLibrary
     public class Menu
     {
         //Splash
-        public string 
-            splash_Title;
+        public string
+            splash_Title,
+            splash_Start,
+            splash_End;
         //Menu
         public string
             menu_Play,
@@ -22,5 +24,11 @@ namespace MDDataLibrary
             pause_Resume,
             pause_Controls,
             pause_Quit;
+        // Credits
+        public string
+            credits_Programmer,
+            credits_ProgrammerName,
+            credits_Artist,
+            credits_ArtistName;
     }
 }

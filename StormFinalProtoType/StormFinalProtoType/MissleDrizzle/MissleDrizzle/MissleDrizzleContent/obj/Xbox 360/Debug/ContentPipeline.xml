@@ -137,33 +137,6 @@
       <Time>2013-12-10T12:55:19.7936641-05:00</Time>
     </Item>
     <Item>
-      <Source>Sepia.fx</Source>
-      <Name>Sepia</Name>
-      <Importer>EffectImporter</Importer>
-      <Processor>EffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\Sepia.xnb</Output>
-      <Time>2013-12-08T19:15:38.59337-05:00</Time>
-    </Item>
-    <Item>
-      <Source>Noise.fx</Source>
-      <Name>Noise</Name>
-      <Importer>EffectImporter</Importer>
-      <Processor>EffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\Noise.xnb</Output>
-      <Time>2013-12-08T19:11:22.7517367-05:00</Time>
-    </Item>
-    <Item>
-      <Source>Languages.xml</Source>
-      <Name>Languages</Name>
-      <Importer>XmlImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\Languages.xnb</Output>
-      <Time>2013-12-07T21:26:01.0331527-05:00</Time>
-    </Item>
-    <Item>
       <Source>FPO\walksheet2.png</Source>
       <Name>FPO\walksheet2</Name>
       <Importer>TextureImporter</Importer>
@@ -182,6 +155,33 @@
       <Time>2013-12-08T21:28:54.0286827-05:00</Time>
     </Item>
     <Item>
+      <Source>FPO\Cursor.png</Source>
+      <Name>FPO\Cursor</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\Cursor.xnb</Output>
+      <Time>2013-12-10T13:30:41.8940413-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sepia.fx</Source>
+      <Name>Sepia</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\Sepia.xnb</Output>
+      <Time>2013-12-08T19:15:38.59337-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Noise.fx</Source>
+      <Name>Noise</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\Noise.xnb</Output>
+      <Time>2013-12-08T19:11:22.7517367-05:00</Time>
+    </Item>
+    <Item>
       <Source>MenuFont.spritefont</Source>
       <Name>MenuFont</Name>
       <Importer>FontDescriptionImporter</Importer>
@@ -189,6 +189,15 @@
       <Options>None</Options>
       <Output>C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\MenuFont.xnb</Output>
       <Time>2013-12-07T22:43:42.0352416-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Languages.xml</Source>
+      <Name>Languages</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\Languages.xnb</Output>
+      <Time>2013-12-10T14:37:02.4537163-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -228,7 +237,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MDDataLibrary\bin\x86\Debug\MDDataLibrary.dll</Key>
-        <Value>2013-12-08T16:01:28.5110234-05:00</Value>
+        <Value>2013-12-10T14:34:09.7198365-05:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>

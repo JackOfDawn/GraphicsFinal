@@ -31,7 +31,10 @@ namespace MissileDrizzle.Manager
         int
             screenHeight = 720,
             screenWidth = 1280;
+        public bool
+            isOver { get; private set; }
 
+        //Screens
         public SCREEN_STATES
             mCurrentState,
             mNextState;
@@ -44,6 +47,7 @@ namespace MissileDrizzle.Manager
         MainMenuScreen
             mMenuScreen;
 
+        //Buffers and things
         ContentManager
             mContent;
         GraphicsDevice
@@ -86,6 +90,7 @@ namespace MissileDrizzle.Manager
             mGameScreen = new GameScreen(new EventHandler(GameScreenEvent), pGraphics);
             mMenuScreen = new MainMenuScreen(new EventHandler(MenuScreenEvent), pGraphics);
 
+
             //mCurrentScreen = mGameScreen
             
             tempRenderTargetOne = new RenderTarget2D(mGraphics, screenWidth, screenHeight);
@@ -113,8 +118,9 @@ namespace MissileDrizzle.Manager
         public void initScreens()
         {
             mSplashScreen.init(mContent);
-            mGameScreen.init(mContent);
+            //mGameScreen.init(mContent);
             mMenuScreen.init(mContent);
+            
         }
 
         public void update(GameTime pGameTime)
@@ -134,6 +140,7 @@ namespace MissileDrizzle.Manager
             }
 
             mCurrentScreen.update(pGameTime);
+            isOver = mCurrentScreen.returnIsOver();
 
             noise = (noise + 1) % 3;
             noiseFilter.SetValue(TempNoise[noise]);
@@ -190,6 +197,7 @@ namespace MissileDrizzle.Manager
         public void MenuScreenEvent(object obj, EventArgs e)
         {
             mGameScreen.init(mContent);
+            mCurrentState = SCREEN_STATES.GAME_SCREEN;
         }
 
         public void GameScreenEvent(object obj, EventArgs e)

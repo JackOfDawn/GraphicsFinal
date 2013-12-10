@@ -22,6 +22,7 @@ namespace MissileDrizzle
 
 
         StateManager mScreenManager;
+        bool endGame;
 
         public Game1()
         {
@@ -30,6 +31,7 @@ namespace MissileDrizzle
             Content.RootDirectory = "Content";
             graphics.PreferredBackBufferWidth = 1280;
             graphics.PreferredBackBufferHeight = 720;
+
             //graphics.IsFullScreen = true;
         }
 
@@ -42,7 +44,7 @@ namespace MissileDrizzle
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-
+            endGame = false;
             base.Initialize();
         }
 
@@ -78,12 +80,12 @@ namespace MissileDrizzle
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            // Allows the game to exit
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
+            if(endGame)
                 this.Exit();
 
             mScreenManager.update(gameTime);
             // TODO: Add your update logic here
+            endGame = mScreenManager.isOver;
 
             base.Update(gameTime);
         }

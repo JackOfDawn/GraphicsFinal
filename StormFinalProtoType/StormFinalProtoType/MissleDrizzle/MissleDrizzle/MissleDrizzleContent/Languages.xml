@@ -2,7 +2,9 @@
 <XnaContent>
 	<Asset Type="MDDataLibrary.Menu[]">
 		<Item>
-			<splash_Title>Missle Drizzle</splash_Title>
+			<splash_Title>Missile Drizzle</splash_Title>
+			<splash_Start>Game Start!</splash_Start>
+			<splash_End>Game, Set, Match!</splash_End>
 			<menu_Play>Play</menu_Play>
 			<menu_Controls>Controls</menu_Controls>
 			<menu_Language>Umstellung Sprache</menu_Language>
@@ -11,9 +13,15 @@
 			<pause_Resume>Resume</pause_Resume>
 			<pause_Controls>Controls</pause_Controls>
 			<pause_Quit>End</pause_Quit>
+			<credits_Programmer>Programmer:</credits_Programmer>
+			<credits_ProgrammerName>Jack Storm</credits_ProgrammerName>
+			<credits_Artist>Artist:</credits_Artist>
+			<credits_ArtistName>Brook Chipman</credits_ArtistName>
 		</Item>
 		<Item>
-			<splash_Title>Missle Drizzle</splash_Title>
+			<splash_Title>Missile Drizzle</splash_Title>
+			<splash_Start>Spiel Start!</splash_Start>
+			<splash_End>Spiel, Set, Wettkampf!</splash_End>
 			<menu_Play>Spielen</menu_Play>
 			<menu_Controls>Steuerung</menu_Controls>
 			<menu_Language>Switch Language</menu_Language>
@@ -22,6 +30,10 @@
 			<pause_Resume>Fortsetzen</pause_Resume>
 			<pause_Controls>Steuerung</pause_Controls>
 			<pause_Quit>Ende</pause_Quit>
+			<credits_Programmer>Programmierer:</credits_Programmer>
+			<credits_ProgrammerName>Jack Storm</credits_ProgrammerName>
+			<credits_Artist>Kuenstler:</credits_Artist>
+			<credits_ArtistName>Brook Chipman</credits_ArtistName>
 		</Item>
 	</Asset>
 </XnaContent>

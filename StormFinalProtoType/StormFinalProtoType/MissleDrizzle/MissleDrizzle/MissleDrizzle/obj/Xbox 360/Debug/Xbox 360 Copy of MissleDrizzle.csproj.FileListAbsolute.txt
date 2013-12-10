@@ -48,3 +48,4 @@ C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType
 C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\walksheet2.xnb
 C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\idol2.xnb
 C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\MenuFont.xnb
+C:\Users\JackStorm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\Cursor.xnb

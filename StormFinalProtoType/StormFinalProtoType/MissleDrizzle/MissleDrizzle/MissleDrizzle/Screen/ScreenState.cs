@@ -28,6 +28,10 @@ namespace MissileDrizzle.Screen
             mCurrentLanguage;
         static protected SpriteFont
             mMainFont;
+        static protected PlayerIndex 
+            mMenuPlayer = PlayerIndex.One;
+        static protected bool
+            isOver;
 
         public ScreenState(EventHandler TheScreenEvent, GraphicsDevice pGraphics)
         {
@@ -40,6 +44,7 @@ namespace MissileDrizzle.Screen
         {
             mMainLanguage = content.Load<Menu[]>("Languages");
             mMainFont = content.Load<SpriteFont>("MenuFont");
+            isOver = false;
         }
 
         public virtual void init(ContentManager content) { }
@@ -47,6 +52,13 @@ namespace MissileDrizzle.Screen
         public virtual void update(GameTime pGameTime) { }
 
         public virtual void draw(SpriteBatch pSpriteBatch) { }
+
+        public bool returnIsOver()
+        {
+            return isOver;
+        }
+
+
     }
 
     
