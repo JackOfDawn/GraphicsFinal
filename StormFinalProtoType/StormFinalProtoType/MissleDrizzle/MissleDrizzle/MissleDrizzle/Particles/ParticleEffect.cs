@@ -194,14 +194,14 @@ namespace MissileDrizzle.Particles
 
             private void createFountainEffect(int particleNum)
             {
-                int initAge = 1000; // 1000 per second
+                int initAge = 500; // 1000 per second
                 int fadeAge = 100;
 
-                float random = myRandom.Next(-100, 100);
+                float random = myRandom.Next(-250, 250);
                 //random = random / 100;
 
                 Vector2 initPos = mOrigin;
-                Vector2 initVel = new Vector2(random, .5f *(float)-myRandom.Next(50, 150));
+                Vector2 initVel = new Vector2(random, .5f *(float)-myRandom.Next(0, 250));
 
                 Vector2 initAcc = new Vector2(0, 50);
                 float initDamp = 1.0f;
