@@ -23,12 +23,20 @@ namespace MDDataLibrary
         public string
             pause_Resume,
             pause_Controls,
+            pause_Main,
             pause_Quit;
-        // Credits
+        //Credits
         public string
             credits_Programmer,
             credits_ProgrammerName,
             credits_Artist,
             credits_ArtistName;
+        //Controls
+        public string
+            controls_Stick,
+            controls_Start,
+            controls_Select,
+            controls_A,
+            controls_B;
     }
 }

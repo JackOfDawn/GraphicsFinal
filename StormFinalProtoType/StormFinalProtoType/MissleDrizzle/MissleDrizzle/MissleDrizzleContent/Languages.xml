@@ -12,11 +12,17 @@
 			<menu_Quit>Quit</menu_Quit>
 			<pause_Resume>Resume</pause_Resume>
 			<pause_Controls>Controls</pause_Controls>
+			<pause_Main>Menue</pause_Main>
 			<pause_Quit>End</pause_Quit>
 			<credits_Programmer>Programmer:</credits_Programmer>
 			<credits_ProgrammerName>Jack Storm</credits_ProgrammerName>
 			<credits_Artist>Artist:</credits_Artist>
 			<credits_ArtistName>Brook Chipman</credits_ArtistName>
+			<controls_Stick>Move/Rotate</controls_Stick>
+			<controls_Start>Pause</controls_Start>
+			<controls_Select>???</controls_Select>
+			<controls_A>Shoot</controls_A>
+			<controls_B>Jump</controls_B>
 		</Item>
 		<Item>
 			<splash_Title>Missile Drizzle</splash_Title>
@@ -29,11 +35,17 @@
 			<menu_Quit>Abtritt</menu_Quit>
 			<pause_Resume>Fortsetzen</pause_Resume>
 			<pause_Controls>Steuerung</pause_Controls>
+			<pause_Main>Menue</pause_Main>
 			<pause_Quit>Ende</pause_Quit>
 			<credits_Programmer>Programmierer:</credits_Programmer>
 			<credits_ProgrammerName>Jack Storm</credits_ProgrammerName>
 			<credits_Artist>Kuenstler:</credits_Artist>
 			<credits_ArtistName>Brook Chipman</credits_ArtistName>
+			<controls_Stick>Bewegen/Drehen</controls_Stick>
+			<controls_Start>Pause</controls_Start>
+			<controls_Select>???</controls_Select>
+			<controls_A>Schiessen</controls_A>
+			<controls_B>Springen</controls_B>
 		</Item>
 	</Asset>
 </XnaContent>

@@ -16,8 +16,8 @@ Content\FPO\MenuScreen.xnb
 Content\FPO\walksheet2.xnb
 Content\FPO\idol2.xnb
 Content\FPO\Cursor.xnb
+Content\FPO\Controls.xnb
 Content\Sepia.xnb
 Content\Noise.xnb
 Content\MenuFont.xnb
 Content\Languages.xnb
-Content\FPO\Controls.xnb

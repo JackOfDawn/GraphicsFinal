@@ -12,8 +12,17 @@ using MissileDrizzle.Particles;
 using MissileDrizzle.Parallax;
 
 
+
 namespace MissileDrizzle.Screen
 {
+    enum PAUSE_SELECTIONS
+    {
+        PLAY = 0,
+        CONTROLS,
+        MAIN_MENU,
+        QUIT
+    };
+
 
     class GameScreen : ScreenState
     {
@@ -57,11 +66,11 @@ namespace MissileDrizzle.Screen
         Sprite
             mCourt;
 
-        //ForeGround
-
-        //float count = 1.0f;
-
-        //SpriteFont FONT;
+        bool
+            paused,
+            showControls;
+        float
+            showTime;
 
         public GameScreen(EventHandler TheScreenEvent, GraphicsDevice pGraphics)
             : base(TheScreenEvent, pGraphics)
@@ -110,6 +119,9 @@ namespace MissileDrizzle.Screen
             mCourt.createSprite(tmpTexture, new Rectangle(0, 0, 1280, 720));
             
             attachListeners();
+
+            paused = false;
+            showControls = false;
            
         }
 
@@ -132,36 +144,148 @@ namespace MissileDrizzle.Screen
             mInputManagerPTwo.event_backPressed += new InputManager.buttonPressDelegate(mPlayers[(int)PlayerIndex.Two].playerJumpHandler);
             //mInputManagerPTwo.event_directionPressed += new InputManager.directionPressDelegate(mPlayerTwo.mCannon.cannonRotationHandler);
 
-            
-            
+            //both
+            mInputManagerPOne.event_startPressed += new InputManager.buttonPressDelegate(startPressed);
+            mInputManagerPTwo.event_startPressed += new InputManager.buttonPressDelegate(startPressed);
+        }
+
+        private void startPressed()
+        {
+            removeEventListeners();
+            paused = true;
+
+            mInputManagerPOne.event_menuDirectionPressed += new InputManager.menuDirectionPressDelegate(pauseNavigation);
+            mInputManagerPTwo.event_menuDirectionPressed += new InputManager.menuDirectionPressDelegate(pauseNavigation);
+
+            mInputManagerPOne.event_actionPressed += new InputManager.buttonPressDelegate(pauseAction);
+            mInputManagerPTwo.event_actionPressed += new InputManager.buttonPressDelegate(pauseAction);
+
+        }
+
+        private void pauseAction()
+        {
+            switch (mSelection)
+            {
+                case (int)PAUSE_SELECTIONS.PLAY:
+                    mInputManagerPOne.event_menuDirectionPressed -= new InputManager.menuDirectionPressDelegate(pauseNavigation);
+                    mInputManagerPTwo.event_menuDirectionPressed -= new InputManager.menuDirectionPressDelegate(pauseNavigation);
+
+                    mInputManagerPOne.event_actionPressed -= new InputManager.buttonPressDelegate(pauseAction);
+                    mInputManagerPTwo.event_actionPressed -= new InputManager.buttonPressDelegate(pauseAction);
+                    
+                    attachListeners();
+
+                    paused = false;
+                    break;
+
+
+                case (int)PAUSE_SELECTIONS.CONTROLS:
+                    showTime = MAX_CONTROL_TIME;
+                    showControls = true;
+                    break;
+
+
+                case (int)PAUSE_SELECTIONS.MAIN_MENU:
+                    mInputManagerPOne.event_menuDirectionPressed -= new InputManager.menuDirectionPressDelegate(pauseNavigation);
+                    mInputManagerPTwo.event_menuDirectionPressed -= new InputManager.menuDirectionPressDelegate(pauseNavigation);
+
+                    mInputManagerPOne.event_actionPressed -= new InputManager.buttonPressDelegate(pauseAction);
+                    mInputManagerPTwo.event_actionPressed -= new InputManager.buttonPressDelegate(pauseAction);
+
+                    eScreenEvent.Invoke(this, new EventArgs());
+                    break;
+
+
+                case (int)PAUSE_SELECTIONS.QUIT:
+                    isOver = true;
+                    break;
+
+            }
+        }
+
+        private void pauseNavigation(bool[] direction)
+        {
+            if (direction[(int)Direction.up])
+            {
+                mSelection--;
+                if (mSelection < 0)
+                    mSelection = 0;
+            }
+            if (direction[(int)Direction.down])
+            {
+                mSelection++;
+                if (mSelection > 3)
+                    mSelection = 3;
+            }
+
+            mCursorLocation = new Vector2(mSelectionLocations[mSelection].X - 18, mSelectionLocations[mSelection].Y);
+        }
+
+        private void removeEventListeners()
+        {
+            //Player one
+            mInputManagerPOne.event_directionLeftStickPressed -= new InputManager.directionPressDelegate(mPlayers[(int)PlayerIndex.One].playerMovedHandler);
+            mInputManagerPOne.event_directionPressed -= new InputManager.directionPressDelegate(mPlayers[(int)PlayerIndex.One].playerMovedHandler);
+            mInputManagerPOne.event_directionPressed -= new InputManager.directionPressDelegate(mPlayers[(int)PlayerIndex.One].mCannon.cannonRotationHandler);
+            mInputManagerPOne.event_directionLeftStickPressed -= new InputManager.directionPressDelegate(mPlayers[(int)PlayerIndex.One].mCannon.cannonRotationHandler);
+            mInputManagerPOne.event_actionPressed -= new InputManager.buttonPressDelegate(mBallManager.playerOneShotHandler);
+            mInputManagerPOne.event_backPressed -= new InputManager.buttonPressDelegate(mPlayers[(int)PlayerIndex.One].playerJumpHandler);
+
+            //Player Two
+            mInputManagerPTwo.event_directionLeftStickPressed -= new InputManager.directionPressDelegate(mPlayers[(int)PlayerIndex.Two].playerMovedHandler);
+            mInputManagerPTwo.event_directionLeftStickPressed -= new InputManager.directionPressDelegate(mPlayers[(int)PlayerIndex.Two].mCannon.cannonRotationHandler);
+            mInputManagerPTwo.event_directionPressed -= new InputManager.directionPressDelegate(mPlayers[(int)PlayerIndex.Two].playerMovedHandler);
+            mInputManagerPTwo.event_directionPressed -= new InputManager.directionPressDelegate(mPlayers[(int)PlayerIndex.Two].mCannon.cannonRotationHandler);
+            mInputManagerPTwo.event_actionPressed -= new InputManager.buttonPressDelegate(mBallManager.playerTwoShotHandler);
+            mInputManagerPTwo.event_backPressed -= new InputManager.buttonPressDelegate(mPlayers[(int)PlayerIndex.Two].playerJumpHandler);
+            //mInputManagerPTwo.event_directionPressed += new InputManager.directionPressDelegate(mPlayerTwo.mCannon.cannonRotationHandler);
+
+            //both
+            mInputManagerPOne.event_startPressed -= new InputManager.buttonPressDelegate(startPressed);
+            mInputManagerPTwo.event_startPressed -= new InputManager.buttonPressDelegate(startPressed);
         }
 
         public override void  update(GameTime pGameTime)
         {
-            calculateCameraZoom();
-
-            if (Keyboard.GetState().IsKeyDown(Keys.B) == true)
-            {
-                mParticleManager.addEffect(EffectType.explosion, new Vector2(500, 500));
-            } 
-            
-
             mInputManagerPOne.update(pGameTime);
             mInputManagerPTwo.update(pGameTime);
 
-            foreach (Player p in mPlayers)
+            if (paused)
             {
-                p.update(pGameTime);
+                mCursor.updatePos(mCursorLocation);
+                if (showControls)
+                {
+                    showTime = showTime - pGameTime.ElapsedGameTime.Milliseconds;
+                    if (showTime < 0)
+                        showControls = false;
+                }
             }
+            else
+            {
+                calculateCameraZoom();
 
-            
-            //OtherSystems
-            mParticleManager.update(pGameTime);
-            mBallManager.update(pGameTime);
-            mBG.update(pGameTime);
-           
-            //mCam.Zoom = count;
-            //mCam.Pos = new Vector2(1, 5);
+                if (Keyboard.GetState().IsKeyDown(Keys.B) == true)
+                {
+                    mParticleManager.addEffect(EffectType.explosion, new Vector2(500, 500));
+                }
+
+
+
+
+                foreach (Player p in mPlayers)
+                {
+                    p.update(pGameTime);
+                }
+
+
+                //OtherSystems
+                mParticleManager.update(pGameTime);
+                mBallManager.update(pGameTime);
+                mBG.update(pGameTime);
+
+                //mCam.Zoom = count;
+                //mCam.Pos = new Vector2(1, 5);
+            }
             
         }
 
@@ -206,7 +330,28 @@ namespace MissileDrizzle.Screen
                 null,
                 mCam.getTransformation(Vector2.Zero));
             mBackground.drawZeroOrigin(pSpriteBatch, SpriteEffects.None);
-           
+
+            if (paused)
+            {
+                if (showControls)
+                {
+                    pSpriteBatch.Draw(mControls, SCREEN_POS, Color.White);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].controls_Stick, mControlLocations[0], Color.White);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].controls_Start, mControlLocations[1], Color.White);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].controls_Select, mControlLocations[2], Color.White);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].controls_A, mControlLocations[3], Color.White);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].controls_B, mControlLocations[4], Color.White);
+                }
+                else
+                {
+                    mCursor.drawZeroOrigin(pSpriteBatch, SpriteEffects.None);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].pause_Resume, mSelectionLocations[0], Color.White);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].pause_Controls, mSelectionLocations[1], Color.White);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].pause_Main, mSelectionLocations[2], Color.White);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].pause_Quit, mSelectionLocations[3], Color.White);
+                }    
+            }
+
             pSpriteBatch.End();
 
 
@@ -238,6 +383,9 @@ namespace MissileDrizzle.Screen
             tmpString = "ALIVE PARTICLE COUNT " + mParticleManager.ParticleCountAlive;
             pSpriteBatch.DrawString(FONT, tmpString, new Vector2(0, 50), Color.Black);
             */
+
+            
+
             pSpriteBatch.End();
 
             

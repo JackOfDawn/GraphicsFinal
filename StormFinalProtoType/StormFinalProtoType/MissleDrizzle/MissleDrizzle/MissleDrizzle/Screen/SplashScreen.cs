@@ -30,6 +30,7 @@ namespace MissileDrizzle.Screen
             mTimeElapsed = MAX_TIME;
             //Test = content.Load<SpriteFont>("SpriteFont1");
             loadLanguages(content);
+            loadMenu();
             mCurrentLanguage = Languages.English;
             //Rectangle sourceRect = new Rectangle(0, 0, tempTexture.Width, tempTexture.Height);
             //mBackGround.createSprite(tempTexture, sourceRect);

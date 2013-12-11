@@ -11,13 +11,13 @@ using MissileDrizzle.Manager;
 
 namespace MissileDrizzle.Screen
 {
-    enum MenuSelections
+    enum MENU_SELECTIONS
     {
-        Play = 0,
-        Controls,
-        Language,
-        Credits,
-        Quit
+        PLAY = 0,
+        CONTROLS,
+        LANGUAGE,
+        CREDITS,
+        QUIT
     };
 
     
@@ -27,19 +27,10 @@ namespace MissileDrizzle.Screen
         Background
             mBG;
         Texture2D
-            mCourts,
-            mControls;
-        Vector2
-            SCREEN_POS = new Vector2(496, 130);
+            mCourts;
+            
+        
 
-        Sprite
-            mCursor;
-        Vector2[]
-            mSelectionLocations;
-        Vector2
-            mCursorLocation;
-        int
-            mSelection;
         InputManager
             mMenuManager;
 
@@ -48,14 +39,15 @@ namespace MissileDrizzle.Screen
             MENU = 0,
             CONTROLS,
             CREDITS
-        };
+        }; 
 
         private SHOW
             show;
-        float 
-            showTime;
-        const float 
-            MAX_SHOW_TIME = 3000;
+        float
+            showTime,
+            coolDown = 500;
+        const float
+            MAX_CREDIT_TIME = 1500;
         
         
 
@@ -65,15 +57,7 @@ namespace MissileDrizzle.Screen
         {
             mBG = new Background();
             mCursor = new Sprite();
-            mSelectionLocations = new Vector2[7];
-            mSelectionLocations[0] = new Vector2(515, 145);
-            mSelectionLocations[1] = new Vector2(515, 165);
-            mSelectionLocations[2] = new Vector2(515, 185);
-            mSelectionLocations[3] = new Vector2(515, 205);
-            mSelectionLocations[4] = new Vector2(515, 225);
-            mSelectionLocations[5] = new Vector2(515, 245);
-            mSelectionLocations[6] = new Vector2(515, 265);
-            //mSelectionLocations[7] = new Vector2(515, 285);
+            
         }
 
         public override void init(ContentManager content)
@@ -82,6 +66,8 @@ namespace MissileDrizzle.Screen
             temp = content.Load<Texture2D>("FPO/Cursor");
 
             mMenuManager = new InputManager(mMenuPlayer);
+
+            coolDown = 500;
 
             addListeners();
 
@@ -93,7 +79,7 @@ namespace MissileDrizzle.Screen
             mSelection = 0;
             mCursorLocation = new Vector2(mSelectionLocations[mSelection].X - 18, mSelectionLocations[mSelection].Y);
 
-            showTime = MAX_SHOW_TIME;
+            showTime = MAX_CONTROL_TIME;
         }
 
         private void addListeners()
@@ -124,28 +110,30 @@ namespace MissileDrizzle.Screen
         {
             switch (mSelection)
             {
-                case (int)MenuSelections.Play:
+                case (int)MENU_SELECTIONS.PLAY:
                     mMenuManager.event_menuDirectionPressed -= new InputManager.menuDirectionPressDelegate(menuNavigation);
                     mMenuManager.event_actionPressed -= new InputManager.buttonPressDelegate(menuAction);
                     eScreenEvent.Invoke(this, new EventArgs());
                     break;
 
-                case (int)MenuSelections.Controls:
+                case (int)MENU_SELECTIONS.CONTROLS:
                     show = SHOW.CONTROLS;
+                    showTime = MAX_CONTROL_TIME;
                     break;
 
-                case (int)MenuSelections.Language:
+                case (int)MENU_SELECTIONS.LANGUAGE:
                     if (mCurrentLanguage == Languages.English)
                         mCurrentLanguage = Languages.German;
                     else
                         mCurrentLanguage = Languages.English;
                     break;
 
-                case (int)MenuSelections.Credits:
+                case (int)MENU_SELECTIONS.CREDITS:
                     show = SHOW.CREDITS;
+                    showTime = MAX_CREDIT_TIME;
                     break;
 
-                case (int)MenuSelections.Quit:
+                case (int)MENU_SELECTIONS.QUIT:
                     isOver = true;
                     break;
             }
@@ -155,32 +143,38 @@ namespace MissileDrizzle.Screen
         {
             
             mBG.update(pGameTime);
-            
 
-            switch(show)
+            if (coolDown > 0)
             {
-                case SHOW.MENU:
-                    mMenuManager.update(pGameTime);
-                    mCursor.updatePos(mCursorLocation);
-                    break;
+                coolDown = coolDown - pGameTime.ElapsedGameTime.Milliseconds;
+            }
+            else
+            {
+                switch (show)
+                {
+                    case SHOW.MENU:
+                        mMenuManager.update(pGameTime);
+                        mCursor.updatePos(mCursorLocation);
+                        break;
 
-                case SHOW.CONTROLS:
-                    showTime = showTime - pGameTime.ElapsedGameTime.Milliseconds;
-                    if (showTime < 0)
-                    {
-                        show = SHOW.MENU;
-                        showTime = MAX_SHOW_TIME;
-                    }
-                    break;
-                case SHOW.CREDITS:
+                    case SHOW.CONTROLS:
+                        showTime = showTime - pGameTime.ElapsedGameTime.Milliseconds;
+                        if (showTime < 0)
+                        {
+                            show = SHOW.MENU;
+                            //showTime = MAX_CONTROL_TIME;
+                        }
+                        break;
+                    case SHOW.CREDITS:
 
-                    showTime = showTime - pGameTime.ElapsedGameTime.Milliseconds;
-                    if (showTime < 0)
-                    {
-                        show = SHOW.MENU;
-                        showTime = MAX_SHOW_TIME;
-                    }
-                    break;
+                        showTime = showTime - pGameTime.ElapsedGameTime.Milliseconds;
+                        if (showTime < 0)
+                        {
+                            show = SHOW.MENU;
+                            //showTime = MAX_CONTROL_TIME;
+                        }
+                        break;
+                }
             }
            
             
@@ -192,9 +186,10 @@ namespace MissileDrizzle.Screen
             mBG.draw(pSpriteBatch);
             pSpriteBatch.Draw(mCourts, Vector2.Zero, Color.White);
 
-            //Main Menu
+           
             switch (show)
             {
+                //Main Menu
                 case SHOW.MENU:
                     pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].menu_Play, mSelectionLocations[0], Color.White);
                     pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].menu_Controls, mSelectionLocations[1], Color.White);
@@ -204,12 +199,17 @@ namespace MissileDrizzle.Screen
                     mCursor.drawZeroOrigin(pSpriteBatch, SpriteEffects.None);
                     break;
 
-                     
+                //Controls
                 case SHOW.CONTROLS:
                     pSpriteBatch.Draw(mControls, SCREEN_POS, Color.White);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].controls_Stick, mControlLocations[0], Color.White);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].controls_Start, mControlLocations[1], Color.White);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].controls_Select, mControlLocations[2], Color.White);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].controls_A, mControlLocations[3], Color.White);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].controls_B, mControlLocations[4], Color.White);
                     break;
 
-
+                //Credits
                 case SHOW.CREDITS:
                     pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].credits_Programmer, mSelectionLocations[0], Color.White);
                     pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].credits_ProgrammerName, mSelectionLocations[1], Color.White);
@@ -217,12 +217,6 @@ namespace MissileDrizzle.Screen
                     pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].credits_ArtistName, mSelectionLocations[4], Color.White);
                     break;
             }
-
-            //Credits
-
-
-            //Controls
-
 
             pSpriteBatch.End();
         }

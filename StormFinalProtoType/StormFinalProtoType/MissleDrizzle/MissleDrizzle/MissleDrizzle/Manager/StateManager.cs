@@ -202,7 +202,8 @@ namespace MissileDrizzle.Manager
 
         public void GameScreenEvent(object obj, EventArgs e)
         {
-
+            mMenuScreen.init(mContent);
+            mCurrentState = SCREEN_STATES.MENU_SCREEN;
         }
 
     }
