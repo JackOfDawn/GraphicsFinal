@@ -12,8 +12,8 @@ namespace MissileDrizzle.Actors
     {
         Sprite
             mBallSprite;
-        Vector2
-            mPos;
+        public Vector2
+            mPos { get; private set; }
 
         const float 
             GRAVITY = -60;
@@ -24,6 +24,8 @@ namespace MissileDrizzle.Actors
 
         public bool
             canDamage { get; private set; }
+        public bool
+            explode { get; set; }
         float
             coolDown,
             MAX_COOL = 1.0f;
@@ -46,6 +48,7 @@ namespace MissileDrizzle.Actors
             //mBallSprite.updateScale(2.0f);
             coolDown = MAX_COOL;
             canDamage = false;
+            explode = false;
             
         }
 
@@ -58,6 +61,7 @@ namespace MissileDrizzle.Actors
             isActive = true;
             coolDown = MAX_COOL;
             canDamage = false;
+            explode = false;
         }
 
         public void update(GameTime pGameTime)
@@ -67,6 +71,11 @@ namespace MissileDrizzle.Actors
                 mVelocity.Y = mVelocity.Y - (GRAVITY * ((float)pGameTime.ElapsedGameTime.Milliseconds / 1000));
                 mPos += mVelocity;
                 mBallSprite.updatePos(mPos);
+            }
+            if (mBallSprite.mPos.Y > 630)
+            {
+                isActive = false;
+                explode = true;
             }
 
             
@@ -89,7 +98,10 @@ namespace MissileDrizzle.Actors
             }
         }
 
-
+        public void kill()
+        {
+            isActive = false;
+        }
         
     }
 }

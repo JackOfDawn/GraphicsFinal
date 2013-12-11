@@ -29,7 +29,7 @@ namespace MissileDrizzle.Manager
             
         }
 
-        public void init(List<Player> players, CannonShot[] balls, ref ParticleManager pPManager)
+        public void init(List<Player> players, ref CannonShot[] balls, ref ParticleManager pPManager)
         {
             ref_Balls = balls;
             ref_Players = players;
@@ -55,7 +55,7 @@ namespace MissileDrizzle.Manager
                 {
                     if (ball.canDamage)
                     {
-                       
+                     
                     }
                 }
             }

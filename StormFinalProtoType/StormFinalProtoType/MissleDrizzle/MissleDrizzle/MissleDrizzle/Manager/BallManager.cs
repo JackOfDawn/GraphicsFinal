@@ -56,6 +56,16 @@ namespace MissileDrizzle.Manager
                 {
                     ball.update(pGameTime);
                 }
+                else
+                {
+                    if (ball.explode == true)
+                    {
+                        ball.explode = false;
+                        Vector2 location = new Vector2(ball.mPos.X, 640);
+                        ref_ParticleManager.addEffect(Particles.EffectType.explosionOnGround, location, 0.0f);
+                    }
+                }
+                
             }
         }
 
@@ -95,6 +105,10 @@ namespace MissileDrizzle.Manager
                 if (ball.isActive == false)
                 {
                     ball.spawn(ref_PLAYERS[(int)PlayerIndex.Two].mCannon.mPos, ref_PLAYERS[(int)PlayerIndex.Two].mCannon.mRealRotation);
+                    cannon2Angle.X = ref_PLAYERS[(int)PlayerIndex.Two].mCannon.mPos.X + CANNON_RADIUS * (float)Math.Cos((double)ref_PLAYERS[(int)PlayerIndex.Two].mCannon.mRealRotation);
+                    cannon2Angle.Y = ref_PLAYERS[(int)PlayerIndex.Two].mCannon.mPos.Y + CANNON_RADIUS * (float)Math.Sin((double)ref_PLAYERS[(int)PlayerIndex.Two].mCannon.mRealRotation);
+                    ref_ParticleManager.addEffect(Particles.EffectType.explosionFromCannon, cannon2Angle, ref_PLAYERS[(int)PlayerIndex.Two].mCannon.mRealRotation);
+
                     break;
                 }
             }

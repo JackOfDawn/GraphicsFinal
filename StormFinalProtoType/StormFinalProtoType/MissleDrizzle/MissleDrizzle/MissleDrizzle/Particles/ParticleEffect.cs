@@ -14,7 +14,7 @@ namespace MissileDrizzle.Particles
         fire,
         explosionFromCannon,
         rain,
-        fountain
+        explosionOnGround
     }
 
     class ParticleEffect
@@ -62,8 +62,8 @@ namespace MissileDrizzle.Particles
 
                 switch (mType)
                 {
-                    case EffectType.fountain:
-                        //initFountain();
+                    case EffectType.explosionOnGround:
+                        initFountain();
                         break;
                     case EffectType.explosionFromCannon:
                         initExplosion();
@@ -82,8 +82,8 @@ namespace MissileDrizzle.Particles
                 myRandom = new Random();
                 switch (mType)
                 {
-                    case EffectType.fountain:
-                        //createFountainEffect();
+                    case EffectType.explosionOnGround:
+                        createFountainEffect(particleNum);
                         break;
                     case EffectType.explosionFromCannon:
                         createExplosionFromCannonEffect(particleNum);
@@ -178,49 +178,50 @@ namespace MissileDrizzle.Particles
 
         #endregion
 
-        #region Fountain Effect
+        #region Ground Explosion Effect
 
             private void initFountain()
             {
                 particleTexture = starTexture;
                 
-                mEffectDuration = 1000;
-                mNewParticleAmt = 5;
-                mBurstFreqMS = 16;
+                mEffectDuration = 200;
+                mNewParticleAmt = 1;
+                mBurstFreqMS = 1;
                 mBurstCountdownMS = mBurstFreqMS;
                 mBlendState = BlendState.Additive;
                // mOrigin = new Vector2(200, 200);
             }
 
-            private void createFountainEffect()
+            private void createFountainEffect(int particleNum)
             {
-                int initAge = 3000; // 1000 per second
-                int fadeAge = 2750;
+                int initAge = 1000; // 1000 per second
+                int fadeAge = 900;
+
+                float random = myRandom.Next(-100, 100);
+                //random = random / 100;
 
                 Vector2 initPos = mOrigin;
-                Vector2 initVel = new Vector2(((float)(25.0f * Math.Cos(mEffectDuration))), (float)-myRandom.Next(100, 150));
+                Vector2 initVel = new Vector2(random, .5f *(float)-myRandom.Next(50, 150));
 
-                Vector2 initAcc = new Vector2(0, 100);
+                Vector2 initAcc = new Vector2(0, 50);
                 float initDamp = 1.0f;
 
                 float initRot = 0.0f;
                 float initRotVel = 0.0f;
                 float initRotDamp = 1.0f;
 
-                float initScale = 0.2f;
-                float initScaleVel = 0.2f;
-                float initScaleAcc = -0.1f;
+                float initScale = 1.0f;
+                float initScaleVel = 0.0f;
+                float initScaleAcc = 0.0f;
                 float maxScale = 1.0f;
 
-                Color initColor = Color.Blue;
-                Color finalColor = Color.CadetBlue;
+                Color initColor = Color.OrangeRed;
+                Color finalColor = Color.Yellow;
                 finalColor.A = 0;
 
 
-                //Particle tempParticle = new Particle();
-                //tempParticle.createParticle(particleTexture, initAge, initPos, initVel, initAcc, initDamp, initRot, initRotVel, initRotDamp,
-                //    initScale, initScaleVel, initScaleAcc, maxScale, initColor, finalColor, fadeAge);
-                //mParticles.Add(tempParticle);
+                mParticles[particleNum].createParticle(particleTexture, initAge, initPos, initVel, initAcc, initDamp, initRot, initRotVel, initRotDamp,
+                    initScale, initScaleVel, initScaleAcc, maxScale, initColor, finalColor, fadeAge);
             }
 
         #endregion

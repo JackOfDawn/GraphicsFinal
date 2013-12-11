@@ -40,6 +40,8 @@ namespace MissileDrizzle.Screen
             mParticleManager;
         BallManager
             mBallManager;
+       // CollisionManager
+         //   mCollisionManager;
 
         //Player list
         public List<Player>
@@ -85,6 +87,7 @@ namespace MissileDrizzle.Screen
             mInputManagerPOne = new InputManager(PlayerIndex.One);
             mInputManagerPTwo = new InputManager(PlayerIndex.Two);
             mParticleManager = new ParticleManager();
+            //mCollisionManager = new CollisionManager();
             mBallManager = new BallManager(mPlayers, ref mParticleManager);
             mZoomLevels = new float[3];
 
@@ -109,6 +112,7 @@ namespace MissileDrizzle.Screen
 
             mParticleManager.loadContent(content);
             mBallManager.loadBall(content);
+            //mCollisionManager.init(mPlayers,ref mBallManager.mCannonBalls, ref mParticleManager);
 
             //FONT = content.Load<SpriteFont>("SpriteFont1");
 
@@ -266,7 +270,7 @@ namespace MissileDrizzle.Screen
 
                 if (Keyboard.GetState().IsKeyDown(Keys.B) == true || GamePad.GetState(PlayerIndex.One).Buttons.A == ButtonState.Pressed)
                 {
-                    mParticleManager.addEffect(EffectType.explosionFromCannon, new Vector2(500, 500), 1.0f);
+                    mParticleManager.addEffect(EffectType.explosionOnGround, new Vector2(500, 500), 1.0f);
                 }
 
 
@@ -281,6 +285,7 @@ namespace MissileDrizzle.Screen
                 //OtherSystems
                 mParticleManager.update(pGameTime);
                 mBallManager.update(pGameTime);
+                //mCollisionManager.update(pGameTime);
                 mBG.update(pGameTime);
 
                 //mCam.Zoom = count;
