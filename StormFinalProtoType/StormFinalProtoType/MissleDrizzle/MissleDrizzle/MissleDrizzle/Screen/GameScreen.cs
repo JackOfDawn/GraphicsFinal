@@ -336,19 +336,19 @@ namespace MissileDrizzle.Screen
                 if (showControls)
                 {
                     pSpriteBatch.Draw(mControls, SCREEN_POS, Color.White);
-                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].controls_Stick, mControlLocations[0], Color.White);
-                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].controls_Start, mControlLocations[1], Color.White);
-                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].controls_Select, mControlLocations[2], Color.White);
-                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].controls_A, mControlLocations[3], Color.White);
-                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].controls_B, mControlLocations[4], Color.White);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].controls_Stick, mControlLocations[0], Color.Yellow);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].controls_Start, mControlLocations[1], Color.Yellow);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].controls_Select, mControlLocations[2], Color.Yellow);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].controls_A, mControlLocations[3], Color.Yellow);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].controls_B, mControlLocations[4], Color.Yellow);
                 }
                 else
                 {
                     mCursor.drawZeroOrigin(pSpriteBatch, SpriteEffects.None);
-                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].pause_Resume, mSelectionLocations[0], Color.White);
-                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].pause_Controls, mSelectionLocations[1], Color.White);
-                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].pause_Main, mSelectionLocations[2], Color.White);
-                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].pause_Quit, mSelectionLocations[3], Color.White);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].pause_Resume, mSelectionLocations[0], Color.Yellow);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].pause_Controls, mSelectionLocations[1], Color.Yellow);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].pause_Main, mSelectionLocations[2], Color.Yellow);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].pause_Quit, mSelectionLocations[3], Color.Yellow);
                 }    
             }
 

@@ -163,8 +163,8 @@ namespace MissileDrizzle.Particles
                 float initScaleAcc = -0.1f;
                 float maxScale = 1.0f;
 
-                Color initColor = Color.DarkGray;
-                Color finalColor = Color.Gray;
+                Color initColor = Color.Gray;
+                Color finalColor = Color.DarkGray;
                 finalColor.A = 0;
 
 

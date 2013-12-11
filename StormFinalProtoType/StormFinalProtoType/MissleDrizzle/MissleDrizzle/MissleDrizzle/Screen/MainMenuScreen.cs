@@ -191,30 +191,30 @@ namespace MissileDrizzle.Screen
             {
                 //Main Menu
                 case SHOW.MENU:
-                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].menu_Play, mSelectionLocations[0], Color.White);
-                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].menu_Controls, mSelectionLocations[1], Color.White);
-                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].menu_Language, mSelectionLocations[2], Color.White);
-                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].menu_Credits, mSelectionLocations[3], Color.White);
-                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].menu_Quit, mSelectionLocations[4], Color.White);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].menu_Play, mSelectionLocations[0], Color.Yellow);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].menu_Controls, mSelectionLocations[1], Color.Yellow);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].menu_Language, mSelectionLocations[2], Color.Yellow);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].menu_Credits, mSelectionLocations[3], Color.Yellow);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].menu_Quit, mSelectionLocations[4], Color.Yellow);
                     mCursor.drawZeroOrigin(pSpriteBatch, SpriteEffects.None);
                     break;
 
                 //Controls
                 case SHOW.CONTROLS:
                     pSpriteBatch.Draw(mControls, SCREEN_POS, Color.White);
-                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].controls_Stick, mControlLocations[0], Color.White);
-                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].controls_Start, mControlLocations[1], Color.White);
-                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].controls_Select, mControlLocations[2], Color.White);
-                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].controls_A, mControlLocations[3], Color.White);
-                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].controls_B, mControlLocations[4], Color.White);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].controls_Stick, mControlLocations[0], Color.Yellow);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].controls_Start, mControlLocations[1], Color.Yellow);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].controls_Select, mControlLocations[2], Color.Yellow);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].controls_A, mControlLocations[3], Color.Yellow);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].controls_B, mControlLocations[4], Color.Yellow);
                     break;
 
                 //Credits
                 case SHOW.CREDITS:
-                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].credits_Programmer, mSelectionLocations[0], Color.White);
-                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].credits_ProgrammerName, mSelectionLocations[1], Color.White);
-                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].credits_Artist, mSelectionLocations[3], Color.White);
-                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].credits_ArtistName, mSelectionLocations[4], Color.White);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].credits_Programmer, mSelectionLocations[0], Color.Yellow);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].credits_ProgrammerName, mSelectionLocations[1], Color.Yellow);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].credits_Artist, mSelectionLocations[3], Color.Yellow);
+                    pSpriteBatch.DrawString(mMainFont, mMainLanguage[(int)mCurrentLanguage].credits_ArtistName, mSelectionLocations[4], Color.Yellow);
                     break;
             }
 
