@@ -81,3 +81,4 @@ C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoTy
 C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\obj\Xbox 360\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\obj\Xbox 360\Debug\MissleDrizzle.exe
 C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\obj\Xbox 360\Debug\MissleDrizzle.pdb
+C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\PlayerData.xnb

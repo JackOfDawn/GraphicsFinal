@@ -10,6 +10,7 @@ using Microsoft.Xna.Framework.Input;
 using MissileDrizzle.Manager;
 using MissileDrizzle.Particles;
 using MissileDrizzle.Parallax;
+using MDDataLibrary;
 
 
 
@@ -69,17 +70,18 @@ namespace MissileDrizzle.Screen
             mCourt;
 
         bool
-            paused,
             showControls;
         float
             showTime;
+
+        PlayerData[]
+            PLAYER_INFO;
 
         public GameScreen(EventHandler TheScreenEvent, GraphicsDevice pGraphics)
             : base(TheScreenEvent, pGraphics)
         {
             mPlayers = new List<Player>();
-            mPlayers.Add(new Player(true));
-            mPlayers.Add(new Player(false));
+            
 
             mBG = new Background();
             mBackground = new Sprite();
@@ -100,6 +102,11 @@ namespace MissileDrizzle.Screen
             {
                 mZoomLevels[i] = 1.0f;
             }
+
+            PLAYER_INFO = content.Load<PlayerData[]>("PlayerData");
+
+            mPlayers.Add(new Player(1, PLAYER_INFO[2]));
+            mPlayers.Add(new Player(0, PLAYER_INFO[0]));
 
             mBG.init(content);
             mCam = new Camera();
@@ -126,6 +133,8 @@ namespace MissileDrizzle.Screen
 
             paused = false;
             showControls = false;
+
+            
            
         }
 
@@ -267,14 +276,6 @@ namespace MissileDrizzle.Screen
             else
             {
                 calculateCameraZoom();
-
-                if (Keyboard.GetState().IsKeyDown(Keys.B) == true || GamePad.GetState(PlayerIndex.One).Buttons.A == ButtonState.Pressed)
-                {
-                    mParticleManager.addEffect(EffectType.explosionOnGround, new Vector2(500, 500), 1.0f);
-                }
-
-
-
 
                 foreach (Player p in mPlayers)
                 {

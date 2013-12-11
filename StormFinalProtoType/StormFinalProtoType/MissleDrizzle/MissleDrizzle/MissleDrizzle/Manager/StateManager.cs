@@ -69,7 +69,7 @@ namespace MissileDrizzle.Manager
             noise;
         Texture2D[] TempNoise;
         Random rand;
-
+        
 
         float
             timer1,
@@ -181,7 +181,7 @@ namespace MissileDrizzle.Manager
 
             pSpriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend);
             //Apply first Effect
-            if (mCurrentState != SCREEN_STATES.GAME_SCREEN)
+            if (mCurrentState != SCREEN_STATES.GAME_SCREEN || (mCurrentState == SCREEN_STATES.GAME_SCREEN && mCurrentScreen.paused))
                 noiseEffect.CurrentTechnique.Passes[0].Apply();
             //Draw first buffer Texture to second buffer
             pSpriteBatch.Draw(tempRenderTargetOne, Vector2.Zero, Color.White);
@@ -194,7 +194,7 @@ namespace MissileDrizzle.Manager
             pSpriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend);
             //Apply second Effect
 
-            if(mCurrentState != SCREEN_STATES.GAME_SCREEN)
+            if (mCurrentState != SCREEN_STATES.GAME_SCREEN || (mCurrentState == SCREEN_STATES.GAME_SCREEN && mCurrentScreen.paused))
                 SepiaEffect.CurrentTechnique.Passes[0].Apply();
 
             //Draw Second buffer to first buffer

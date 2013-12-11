@@ -21,3 +21,7 @@ Content\Sepia.xnb
 Content\Noise.xnb
 Content\MenuFont.xnb
 Content\Languages.xnb
+Content\PlayerData.xnb
+Content\FPO\idol3.xnb
+Content\FPO\walksheet3.xnb
+Content\FPO\Cannon2.xnb

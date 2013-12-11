@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XnaContent>
+	<Asset Type="MDDataLibrary.PlayerData[]">
+		<Item>
+			<facing_Right>1</facing_Right>
+			<animation_Walk>FPO/walksheet</animation_Walk>
+			<animation_Idol>FPO/idol</animation_Idol>
+			<prop_Cannon>FPO/cannon</prop_Cannon>
+		</Item>
+		<Item>
+			<facing_Right>0</facing_Right>
+			<animation_Walk>FPO/walksheet2</animation_Walk>
+			<animation_Idol>FPO/idol2</animation_Idol>
+			<prop_Cannon>FPO/cannon</prop_Cannon>
+		</Item>
+		<Item>
+			<facing_Right>1</facing_Right>
+			<animation_Walk>FPO/walksheet3</animation_Walk>
+			<animation_Idol>FPO/idol3</animation_Idol>
+			<prop_Cannon>FPO/cannon2</prop_Cannon>
+		</Item>
+	</Asset>
+</XnaContent>

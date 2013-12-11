@@ -54,6 +54,10 @@ namespace MissileDrizzle.Screen
         protected static Texture2D
             mControls;
 
+        public bool
+            paused = false;
+
+
         public ScreenState(EventHandler TheScreenEvent, GraphicsDevice pGraphics)
         {
             eScreenEvent = TheScreenEvent;

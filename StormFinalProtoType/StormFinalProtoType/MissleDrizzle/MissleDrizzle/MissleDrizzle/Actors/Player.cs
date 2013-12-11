@@ -6,6 +6,7 @@ using System.Diagnostics;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Content;
+using MDDataLibrary;
 
 namespace MissileDrizzle.Actors
 {
@@ -40,14 +41,16 @@ namespace MissileDrizzle.Actors
 
         bool
             isJumping,
-            isFacingRight,
+            //isFacingRight,
             isIdol; //no you're not an Idol
-
+        int
+            isFacingRight;
         Rectangle 
             mHitBox;
-
+        PlayerData
+            playerInfo;
      
-        public Player(bool FacingRight)
+        public Player(int FacingRight, PlayerData pInfo)
         {
             //mStaticSprite = new Sprite();
             mWalkingAnimation = new Animation();
@@ -55,24 +58,24 @@ namespace MissileDrizzle.Actors
             mCannon = new Cannon(FacingRight);
             mPosition = Vector2.Zero;
             isFacingRight = FacingRight;
-
+            playerInfo = pInfo;
            
             //mCannonShots = new List<CannonShot>();
         }
 
         public void init(ContentManager content)
         {
-            Texture2D tmpTexture = content.Load<Texture2D>("FPO/walksheet2");
+            Texture2D tmpTexture = content.Load<Texture2D>(playerInfo.animation_Walk);
             //mStaticSprite.createSprite(tmpTexture, new Rectangle(0, 0, tmpTexture.Width, tmpTexture.Height));
             mWalkingAnimation.createAnimation(tmpTexture, 8, 84, 112, 100);
 
-            tmpTexture = content.Load<Texture2D>("FPO/idol2");
+            tmpTexture = content.Load<Texture2D>(playerInfo.animation_Idol);
             mIdleAnimation.createAnimation(tmpTexture, 1, 84, 112, 100);
 
-            tmpTexture = content.Load<Texture2D>("FPO/cannon");
+            tmpTexture = content.Load<Texture2D>(playerInfo.prop_Cannon);
             mCannon.init(tmpTexture);
 
-            tmpTexture = content.Load<Texture2D>("FPO/ball");
+            //tmpTexture = content.Load<Texture2D>("FPO/ball");
 
             //Set up hit box.
             mHitBoxPos.X = (84 / 3);
@@ -142,7 +145,7 @@ namespace MissileDrizzle.Actors
         public void draw(SpriteBatch pSpriteBatch)
         {
 
-            if (isFacingRight)
+            if (isFacingRight == 1)
             {
                 if (isIdol)
                 {

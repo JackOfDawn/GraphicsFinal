@@ -15,7 +15,7 @@ namespace MissileDrizzle.Actors
             mCannonTexture;
         Sprite
             mCannonSprite;
-        bool
+        int
             isFacingRight;
         float
             mRotationRight;
@@ -29,7 +29,7 @@ namespace MissileDrizzle.Actors
 
 
 
-        public Cannon(bool pFacingRight)
+        public Cannon(int pFacingRight)
         {
             mCannonSprite = new Sprite();
             isFacingRight = pFacingRight;
@@ -48,13 +48,13 @@ namespace MissileDrizzle.Actors
             
             //isFacingRight = true;
             //mCannonSprite.updateScale(mScale);
-            if (!isFacingRight)
+            if (!(isFacingRight == 1))
             {
                 mRealRotation = (float)Math.PI;
             }
         }
 
-        public void update(GameTime pGameTime, Vector2 pPos, bool pIsLeft)
+        public void update(GameTime pGameTime, Vector2 pPos, int pIsLeft)
         {
             mPos = pPos;
             isFacingRight = pIsLeft;
@@ -97,7 +97,7 @@ namespace MissileDrizzle.Actors
             mRotationRight = MathHelper.Clamp(mRotationRight, -1, 1);
             //mRotationLeft = MathHelper.Clamp(mRotationLeft, (float)(-1 +  Math.PI), (float)(1 + Math.PI));
 
-            if (isFacingRight)
+            if (isFacingRight == 1)
             {
                 mRealRotation = mRotationRight;
             }

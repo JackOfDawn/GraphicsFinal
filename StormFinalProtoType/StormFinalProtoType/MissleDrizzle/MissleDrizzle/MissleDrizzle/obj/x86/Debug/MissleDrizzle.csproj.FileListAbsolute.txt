@@ -154,7 +154,11 @@ C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoTy
 C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\MissleDrizzle.pdb
 C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\MDDataLibrary.dll
 C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\MDDataLibrary.pdb
-C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\obj\x86\Debug\MissleDrizzle.csprojResolveAssemblyReference.cache
 C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\obj\x86\Debug\MissleDrizzle.exe
 C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\obj\x86\Debug\MissleDrizzle.pdb
+C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\PlayerData.xnb
+C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\obj\x86\Debug\MissleDrizzle.csprojResolveAssemblyReference.cache
+C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\FPO\idol3.xnb
+C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\FPO\walksheet3.xnb
+C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\x86\Debug\Content\FPO\Cannon2.xnb

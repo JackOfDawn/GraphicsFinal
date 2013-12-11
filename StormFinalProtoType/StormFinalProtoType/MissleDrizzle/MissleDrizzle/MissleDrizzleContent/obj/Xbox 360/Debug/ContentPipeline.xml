@@ -8,7 +8,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\PlayerStatic.xnb</Output>
-      <Time>2013-12-10T22:31:08.1521887-05:00</Time>
+      <Time>2013-12-11T17:29:35.3430376-05:00</Time>
     </Item>
     <Item>
       <Source>FPO\SplashScreen.png</Source>
@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\SplashScreen.xnb</Output>
-      <Time>2013-12-10T22:31:08.1531886-05:00</Time>
+      <Time>2013-12-11T17:29:35.3430376-05:00</Time>
     </Item>
     <Item>
       <Source>FPO\walksheet.png</Source>
@@ -26,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\walksheet.xnb</Output>
-      <Time>2013-12-10T22:31:08.159188-05:00</Time>
+      <Time>2013-12-11T17:29:35.3430376-05:00</Time>
     </Item>
     <Item>
       <Source>FPO\PlayGround.png</Source>
@@ -35,7 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\PlayGround.xnb</Output>
-      <Time>2013-12-10T22:31:08.1521887-05:00</Time>
+      <Time>2013-12-11T17:29:35.3430376-05:00</Time>
     </Item>
     <Item>
       <Source>FPO\BackGround.png</Source>
@@ -44,7 +44,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\BackGround.xnb</Output>
-      <Time>2013-12-10T22:31:08.1461893-05:00</Time>
+      <Time>2013-12-11T17:29:35.3430376-05:00</Time>
     </Item>
     <Item>
       <Source>FPO\idol.png</Source>
@@ -53,7 +53,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\idol.xnb</Output>
-      <Time>2013-12-10T22:31:08.1561883-05:00</Time>
+      <Time>2013-12-11T17:29:35.3430376-05:00</Time>
     </Item>
     <Item>
       <Source>FPO\Cannon.png</Source>
@@ -62,7 +62,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\Cannon.xnb</Output>
-      <Time>2013-12-10T22:31:08.1471892-05:00</Time>
+      <Time>2013-12-11T17:29:35.3430376-05:00</Time>
     </Item>
     <Item>
       <Source>FPO\ball.png</Source>
@@ -71,7 +71,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\ball.xnb</Output>
-      <Time>2013-12-10T22:31:08.1541885-05:00</Time>
+      <Time>2013-12-11T17:29:35.3430376-05:00</Time>
     </Item>
     <Item>
       <Source>FPO\pixelParticle.png</Source>
@@ -80,7 +80,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\pixelParticle.xnb</Output>
-      <Time>2013-12-10T23:45:03.570834-05:00</Time>
+      <Time>2013-12-11T17:29:35.3430376-05:00</Time>
     </Item>
     <Item>
       <Source>FPO\clouds.png</Source>
@@ -89,7 +89,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\clouds.xnb</Output>
-      <Time>2013-12-10T22:31:08.1541885-05:00</Time>
+      <Time>2013-12-11T17:29:35.3430376-05:00</Time>
     </Item>
     <Item>
       <Source>FPO\MainCloud.png</Source>
@@ -98,7 +98,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\MainCloud.xnb</Output>
-      <Time>2013-12-10T22:31:08.1501889-05:00</Time>
+      <Time>2013-12-11T17:29:35.3430376-05:00</Time>
     </Item>
     <Item>
       <Source>NOISE\noise1.png</Source>
@@ -107,7 +107,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\NOISE\noise1.xnb</Output>
-      <Time>2013-12-10T22:31:08.1651874-05:00</Time>
+      <Time>2013-12-11T17:29:35.3430376-05:00</Time>
     </Item>
     <Item>
       <Source>NOISE\noise2.png</Source>
@@ -116,7 +116,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\NOISE\noise2.xnb</Output>
-      <Time>2013-12-10T22:31:08.1681871-05:00</Time>
+      <Time>2013-12-11T17:29:35.3530362-05:00</Time>
     </Item>
     <Item>
       <Source>NOISE\noise3.png</Source>
@@ -125,7 +125,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\NOISE\noise3.xnb</Output>
-      <Time>2013-12-10T22:31:08.1711868-05:00</Time>
+      <Time>2013-12-11T17:29:35.3530362-05:00</Time>
     </Item>
     <Item>
       <Source>FPO\MenuScreen.png</Source>
@@ -134,7 +134,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\MenuScreen.xnb</Output>
-      <Time>2013-12-10T22:31:08.1511888-05:00</Time>
+      <Time>2013-12-11T17:29:35.3430376-05:00</Time>
     </Item>
     <Item>
       <Source>FPO\walksheet2.png</Source>
@@ -143,7 +143,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\walksheet2.xnb</Output>
-      <Time>2013-12-10T22:31:08.159188-05:00</Time>
+      <Time>2013-12-11T17:29:35.3430376-05:00</Time>
     </Item>
     <Item>
       <Source>FPO\idol2.png</Source>
@@ -152,7 +152,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\idol2.xnb</Output>
-      <Time>2013-12-10T22:31:08.1561883-05:00</Time>
+      <Time>2013-12-11T17:29:35.3430376-05:00</Time>
     </Item>
     <Item>
       <Source>FPO\Cursor.png</Source>
@@ -161,7 +161,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\Cursor.xnb</Output>
-      <Time>2013-12-10T22:31:08.149189-05:00</Time>
+      <Time>2013-12-11T17:29:35.3430376-05:00</Time>
     </Item>
     <Item>
       <Source>FPO\Controls.png</Source>
@@ -170,7 +170,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\FPO\Controls.xnb</Output>
-      <Time>2013-12-10T22:31:08.1481891-05:00</Time>
+      <Time>2013-12-11T17:29:35.3430376-05:00</Time>
     </Item>
     <Item>
       <Source>Sepia.fx</Source>
@@ -179,7 +179,7 @@
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\Sepia.xnb</Output>
-      <Time>2013-12-10T22:31:08.1721867-05:00</Time>
+      <Time>2013-12-11T17:29:35.3530362-05:00</Time>
     </Item>
     <Item>
       <Source>Noise.fx</Source>
@@ -188,7 +188,7 @@
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\Noise.xnb</Output>
-      <Time>2013-12-10T22:31:08.1721867-05:00</Time>
+      <Time>2013-12-11T17:29:35.3530362-05:00</Time>
     </Item>
     <Item>
       <Source>MenuFont.spritefont</Source>
@@ -197,7 +197,7 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\MenuFont.xnb</Output>
-      <Time>2013-12-10T22:31:08.1611878-05:00</Time>
+      <Time>2013-12-11T17:29:35.3430376-05:00</Time>
     </Item>
     <Item>
       <Source>Languages.xml</Source>
@@ -206,7 +206,16 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\Languages.xnb</Output>
-      <Time>2013-12-10T22:31:08.1601879-05:00</Time>
+      <Time>2013-12-11T17:29:35.3430376-05:00</Time>
+    </Item>
+    <Item>
+      <Source>PlayerData.xml</Source>
+      <Name>PlayerData</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MissleDrizzle\MissleDrizzle\bin\Xbox 360\Debug\Content\PlayerData.xnb</Output>
+      <Time>2013-12-11T18:07:08.1135044-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -246,7 +255,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MDDataLibrary\bin\x86\Debug\MDDataLibrary.dll</Key>
-        <Value>2013-12-10T22:33:08.7829702-05:00</Value>
+        <Value>2013-12-11T18:13:51.0839892-05:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
