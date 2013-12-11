@@ -12,7 +12,7 @@ namespace MissileDrizzle.Particles
     {
         smoke = 0,
         fire,
-        explosion,
+        explosionFromCannon,
         rain,
         fountain
     }
@@ -24,7 +24,6 @@ namespace MissileDrizzle.Particles
         public Texture2D
             particleTexture;
         public static Texture2D
-            circleTexture,
             starTexture;
 
         public BlendState
@@ -35,6 +34,8 @@ namespace MissileDrizzle.Particles
             mOriginRadius;
         public Random
             myRandom;
+        public float
+            mAngle;
 
         public int 
             mEffectDuration;
@@ -44,7 +45,6 @@ namespace MissileDrizzle.Particles
             mBurstFreqMS;
         public int
             mBurstCountdownMS;
-
         public Particle[] 
             mParticles {get; private set;}
 
@@ -53,18 +53,19 @@ namespace MissileDrizzle.Particles
             {
             }
 
-            public void initialize(EffectType pType, Vector2 pOrigin, ref Particle[] particleCollection)
+            public void initialize(EffectType pType, Vector2 pOrigin, ref Particle[] particleCollection, float angle = 0.0f)
             {
                 mParticles = particleCollection;
                 mType = pType;
                 mOrigin = pOrigin;
+                mAngle = angle;
 
                 switch (mType)
                 {
                     case EffectType.fountain:
                         //initFountain();
                         break;
-                    case EffectType.explosion:
+                    case EffectType.explosionFromCannon:
                         initExplosion();
                         break;
                 }   
@@ -73,7 +74,7 @@ namespace MissileDrizzle.Particles
             public static void loadContent(ContentManager content)
             {
                 //circleTexture = content.Load<Texture2D>("Rain");
-                starTexture = content.Load<Texture2D>("FPO/ball");
+                starTexture = content.Load<Texture2D>("FPO/pixelParticle");
             }
 
             public void createParticle(int particleNum)
@@ -84,8 +85,8 @@ namespace MissileDrizzle.Particles
                     case EffectType.fountain:
                         //createFountainEffect();
                         break;
-                    case EffectType.explosion:
-                        createExplosionEffect(particleNum);
+                    case EffectType.explosionFromCannon:
+                        createExplosionFromCannonEffect(particleNum);
                         break;
                 }
 
@@ -126,25 +127,29 @@ namespace MissileDrizzle.Particles
 
         #endregion
 
-        #region Explosion Stuff
+        #region Explosion From Cannon
             private void initExplosion()
             {
                 particleTexture = starTexture;
-                mEffectDuration = 1000;
-                mNewParticleAmt = 5;
-                mBurstFreqMS = 16;
-                mBurstCountdownMS = 16;
-                mBlendState = BlendState.Additive;
+                mEffectDuration = 100;
+                mNewParticleAmt = 20;
+                mBurstFreqMS = 2;
+                mBurstCountdownMS = 2;
+                mBlendState = BlendState.AlphaBlend;
                 //mOrigin = new Vector2(400, 300);
             }
 
-            private void createExplosionEffect(int particleNum)
+            private void createExplosionFromCannonEffect(int particleNum)
             {
-                int initAge = 2000; // 1000 per second
-                int fadeAge = 2000;
+                int initAge = 200; // 1000 per second
+                int fadeAge = 200;
+
+                float angle = (float)myRandom.Next(-50, 50) / 100.0f;
+
+                angle = mAngle - angle;
 
                 Vector2 initPos = mOrigin;
-                Vector2 initVel = new Vector2(100.0f * (float)Math.Cos(mEffectDuration), 100.0f * (float)Math.Sin(mEffectDuration));
+                Vector2 initVel = new Vector2((float)myRandom.Next(100, 200) * (float)Math.Cos(angle), (float)myRandom.Next(100, 200) * (float)Math.Sin(angle));
 
                 Vector2 initAcc = new Vector2(0, 0);
                 float initDamp = 1.0f;
@@ -158,8 +163,8 @@ namespace MissileDrizzle.Particles
                 float initScaleAcc = -0.1f;
                 float maxScale = 1.0f;
 
-                Color initColor = Color.Khaki;
-                Color finalColor = Color.Orange;
+                Color initColor = Color.DarkGray;
+                Color finalColor = Color.Gray;
                 finalColor.A = 0;
 
 
@@ -177,7 +182,7 @@ namespace MissileDrizzle.Particles
 
             private void initFountain()
             {
-                particleTexture = circleTexture;
+                particleTexture = starTexture;
                 
                 mEffectDuration = 1000;
                 mNewParticleAmt = 5;

@@ -85,7 +85,7 @@ namespace MissileDrizzle.Screen
             mInputManagerPOne = new InputManager(PlayerIndex.One);
             mInputManagerPTwo = new InputManager(PlayerIndex.Two);
             mParticleManager = new ParticleManager();
-            mBallManager = new BallManager(mPlayers);
+            mBallManager = new BallManager(mPlayers, ref mParticleManager);
             mZoomLevels = new float[3];
 
             
@@ -264,9 +264,9 @@ namespace MissileDrizzle.Screen
             {
                 calculateCameraZoom();
 
-                if (Keyboard.GetState().IsKeyDown(Keys.B) == true)
+                if (Keyboard.GetState().IsKeyDown(Keys.B) == true || GamePad.GetState(PlayerIndex.One).Buttons.A == ButtonState.Pressed)
                 {
-                    mParticleManager.addEffect(EffectType.explosion, new Vector2(500, 500));
+                    mParticleManager.addEffect(EffectType.explosionFromCannon, new Vector2(500, 500), 1.0f);
                 }
 
 

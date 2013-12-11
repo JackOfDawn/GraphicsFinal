@@ -70,6 +70,14 @@ namespace MissileDrizzle.Manager
         Texture2D[] TempNoise;
         Random rand;
 
+
+        float
+            timer1,
+            timer2;
+        const float
+            MAX_TIME_ONE = 100,
+            MAX_TIME_TWO = 100;
+
         public bool
             changeScreen { get; private set; }
 
@@ -142,9 +150,16 @@ namespace MissileDrizzle.Manager
             mCurrentScreen.update(pGameTime);
             isOver = mCurrentScreen.returnIsOver();
 
-            noise = (noise + 1) % 3;
-            noiseFilter.SetValue(TempNoise[noise]);
-            blackLine.SetValue(rand.Next(0,100) / 100.0f);
+
+            timer1 = timer1 - pGameTime.ElapsedGameTime.Milliseconds;
+            timer2 = timer2 - pGameTime.ElapsedGameTime.Milliseconds;
+            if (timer1 < 0)
+            {
+                noise = (noise + 1) % 3;
+                noiseFilter.SetValue(TempNoise[noise]);
+                timer1 = MAX_TIME_ONE;
+            }
+            blackLine.SetValue(rand.Next(0, 100) / 100.0f);
             
             
         }
@@ -166,7 +181,8 @@ namespace MissileDrizzle.Manager
 
             pSpriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend);
             //Apply first Effect
-            noiseEffect.CurrentTechnique.Passes[0].Apply();
+            if (mCurrentState != SCREEN_STATES.GAME_SCREEN)
+                noiseEffect.CurrentTechnique.Passes[0].Apply();
             //Draw first buffer Texture to second buffer
             pSpriteBatch.Draw(tempRenderTargetOne, Vector2.Zero, Color.White);
             pSpriteBatch.End();
@@ -177,7 +193,9 @@ namespace MissileDrizzle.Manager
 
             pSpriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend);
             //Apply second Effect
-            SepiaEffect.CurrentTechnique.Passes[0].Apply();
+
+            if(mCurrentState != SCREEN_STATES.GAME_SCREEN)
+                SepiaEffect.CurrentTechnique.Passes[0].Apply();
 
             //Draw Second buffer to first buffer
             pSpriteBatch.Draw(tempRenderTargetTwo, Vector2.Zero, Color.White);  //WHY U NO WORK?

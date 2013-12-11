@@ -14,6 +14,8 @@ namespace MissileDrizzle.Manager
             ref_Players;
         CannonShot[]
             ref_Balls;
+        ParticleManager
+            ref_ParticleManager;
 
         Rectangle
             mLeftWall,
@@ -27,10 +29,11 @@ namespace MissileDrizzle.Manager
             
         }
 
-        public void init(List<Player> players, CannonShot[] balls)
+        public void init(List<Player> players, CannonShot[] balls, ref ParticleManager pPManager)
         {
             ref_Balls = balls;
             ref_Players = players;
+            ref_ParticleManager = pPManager;
 
             //Walls
             mLeftWall = new Rectangle(0, 177, 25, 474);

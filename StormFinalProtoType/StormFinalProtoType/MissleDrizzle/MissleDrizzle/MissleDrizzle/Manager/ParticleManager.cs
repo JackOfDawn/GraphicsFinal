@@ -16,14 +16,14 @@ namespace MissileDrizzle.Manager
         public ParticleEffect[]
             mAllEffects;
         public const int
-            MAX_EFFECTS = 5;
+            MAX_EFFECTS = 10;
         public int
             ParticleCountAlive { get; private set; }
         public int
             ParticleCount { get; private set; }
 
         public const int
-            MAX_PARTICLES = 1500;
+            MAX_PARTICLES = 3000;
 
         public Particle[]
             mParticles;
@@ -51,13 +51,13 @@ namespace MissileDrizzle.Manager
             }
         }
 
-        public void addEffect(EffectType pType, Vector2 pOrigin)
+        public void addEffect(EffectType pType, Vector2 pOrigin, float pAngle)
         {
             for (int i = 0; i < MAX_EFFECTS; i++)
             {
                 if (!mAllEffects[i].isAlive())
                 {
-                    mAllEffects[i].initialize(pType, pOrigin, ref mParticles);
+                    mAllEffects[i].initialize(pType, pOrigin, ref mParticles, pAngle);
                     break;
                 }
             }

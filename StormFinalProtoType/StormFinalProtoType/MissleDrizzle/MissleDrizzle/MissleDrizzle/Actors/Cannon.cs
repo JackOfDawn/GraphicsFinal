@@ -27,6 +27,8 @@ namespace MissileDrizzle.Actors
             mPos { get; private set; }
 
 
+
+
         public Cannon(bool pFacingRight)
         {
             mCannonSprite = new Sprite();
@@ -43,6 +45,7 @@ namespace MissileDrizzle.Actors
             //mRotationLeft = (float)Math.PI;
             //mScale = 1.25f;
             mPos = Vector2.Zero;
+            
             //isFacingRight = true;
             //mCannonSprite.updateScale(mScale);
             if (!isFacingRight)
@@ -64,11 +67,11 @@ namespace MissileDrizzle.Actors
         {
             //if (isFacingRight)
                 mCannonSprite.drawOrigin(pSpriteBatch, SpriteEffects.None);
-           
+        
                 //mCannonSprite.drawOrigin(pSpriteBatch, SpriteEffects.FlipHorizontally);
         }
 
-
+        
         public void cannonRotationHandler(Vector2 pDirection)
         {
             //float tmpRot = Math.Abs(mRot);
