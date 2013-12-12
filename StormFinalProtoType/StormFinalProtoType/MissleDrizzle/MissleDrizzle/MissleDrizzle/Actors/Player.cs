@@ -50,21 +50,24 @@ namespace MissileDrizzle.Actors
         PlayerData
             playerInfo;
      
-        public Player(int FacingRight, PlayerData pInfo)
+        public Player(int FacingRight)
         {
             //mStaticSprite = new Sprite();
             mWalkingAnimation = new Animation();
             mIdleAnimation = new Animation();
-            mCannon = new Cannon(FacingRight);
+            
             mPosition = Vector2.Zero;
             isFacingRight = FacingRight;
-            playerInfo = pInfo;
+            
            
             //mCannonShots = new List<CannonShot>();
         }
 
-        public void init(ContentManager content)
+        public void init(ContentManager content, PlayerData pInfo)
         {
+            mCannon = new Cannon(isFacingRight);
+            playerInfo = pInfo;
+
             Texture2D tmpTexture = content.Load<Texture2D>(playerInfo.animation_Walk);
             //mStaticSprite.createSprite(tmpTexture, new Rectangle(0, 0, tmpTexture.Width, tmpTexture.Height));
             mWalkingAnimation.createAnimation(tmpTexture, 8, 84, 112, 100);

@@ -10,3 +10,9 @@ C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoTy
 C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MDDataLibrary\obj\x86\Debug\MDDataLibrary.dll
 C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MDDataLibrary\obj\x86\Debug\MDDataLibrary.pdb
 C:\Users\jacob.storm\Desktop\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MDDataLibrary\obj\x86\Debug\MDDataLibrary.csprojResolveAssemblyReference.cache
+C:\Users\jacob.storm\Desktop\New folder\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MDDataLibrary\bin\x86\Debug\MDDataLibrary.dll
+C:\Users\jacob.storm\Desktop\New folder\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MDDataLibrary\bin\x86\Debug\MDDataLibrary.pdb
+C:\Users\jacob.storm\Desktop\New folder\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MDDataLibrary\obj\x86\Debug\MDDataLibrary.csprojResolveAssemblyReference.cache
+C:\Users\jacob.storm\Desktop\New folder\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MDDataLibrary\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\jacob.storm\Desktop\New folder\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MDDataLibrary\obj\x86\Debug\MDDataLibrary.dll
+C:\Users\jacob.storm\Desktop\New folder\GraphicsFinal\StormFinalProtoType\StormFinalProtoType\MissleDrizzle\MDDataLibrary\obj\x86\Debug\MDDataLibrary.pdb

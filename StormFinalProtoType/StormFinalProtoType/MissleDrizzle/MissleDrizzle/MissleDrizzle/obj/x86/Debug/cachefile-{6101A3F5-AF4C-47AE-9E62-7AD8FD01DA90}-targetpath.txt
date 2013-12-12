@@ -17,11 +17,11 @@ Content\FPO\walksheet2.xnb
 Content\FPO\idol2.xnb
 Content\FPO\Cursor.xnb
 Content\FPO\Controls.xnb
+Content\FPO\idol3.xnb
+Content\FPO\walksheet3.xnb
+Content\FPO\Cannon2.xnb
 Content\Sepia.xnb
 Content\Noise.xnb
 Content\MenuFont.xnb
 Content\Languages.xnb
 Content\PlayerData.xnb
-Content\FPO\idol3.xnb
-Content\FPO\walksheet3.xnb
-Content\FPO\Cannon2.xnb

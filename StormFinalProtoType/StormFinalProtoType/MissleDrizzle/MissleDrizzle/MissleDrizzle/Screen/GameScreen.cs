@@ -77,10 +77,15 @@ namespace MissileDrizzle.Screen
         PlayerData[]
             PLAYER_INFO;
 
+        float
+            coolDown = 500;
+
         public GameScreen(EventHandler TheScreenEvent, GraphicsDevice pGraphics)
             : base(TheScreenEvent, pGraphics)
         {
             mPlayers = new List<Player>();
+            mPlayers.Add(new Player(1));
+            mPlayers.Add(new Player(0));
             
 
             mBG = new Background();
@@ -105,17 +110,16 @@ namespace MissileDrizzle.Screen
 
             PLAYER_INFO = content.Load<PlayerData[]>("PlayerData");
 
-            mPlayers.Add(new Player(1, PLAYER_INFO[2]));
-            mPlayers.Add(new Player(0, PLAYER_INFO[0]));
+            coolDown = 500;
 
             mBG.init(content);
             mCam = new Camera();
-            foreach (Player p in mPlayers)
-            {
-                p.init(content);
-            }
-            mPlayers[(int)PlayerIndex.One].mPosition = new Vector2(300, 0);
-            mPlayers[(int)PlayerIndex.Two].mPosition = new Vector2(980, 0);
+
+            mPlayers[0].init(content, PLAYER_INFO[0]);
+            mPlayers[1].init(content, PLAYER_INFO[1]);
+
+            mPlayers[(int)PlayerIndex.One].mPosition = new Vector2(100, 589);
+            mPlayers[(int)PlayerIndex.Two].mPosition = new Vector2(1180, 589);
 
             mParticleManager.loadContent(content);
             mBallManager.loadBall(content);
@@ -134,6 +138,7 @@ namespace MissileDrizzle.Screen
             paused = false;
             showControls = false;
 
+            
             
            
         }
@@ -260,39 +265,52 @@ namespace MissileDrizzle.Screen
 
         public override void  update(GameTime pGameTime)
         {
-            mInputManagerPOne.update(pGameTime);
-            mInputManagerPTwo.update(pGameTime);
 
-            if (paused)
-            {
-                mCursor.updatePos(mCursorLocation);
-                if (showControls)
-                {
-                    showTime = showTime - pGameTime.ElapsedGameTime.Milliseconds;
-                    if (showTime < 0)
-                        showControls = false;
-                }
-            }
-            else
-            {
-                calculateCameraZoom();
 
+            if (coolDown > 0)
+            {
                 foreach (Player p in mPlayers)
                 {
                     p.update(pGameTime);
                 }
-
-
-                //OtherSystems
-                mParticleManager.update(pGameTime);
-                mBallManager.update(pGameTime);
-                //mCollisionManager.update(pGameTime);
-                mBG.update(pGameTime);
-
-                //mCam.Zoom = count;
-                //mCam.Pos = new Vector2(1, 5);
+                coolDown = coolDown - pGameTime.ElapsedGameTime.Milliseconds;
             }
-            
+            else
+            {
+                mInputManagerPOne.update(pGameTime);
+                mInputManagerPTwo.update(pGameTime);
+
+                if (paused)
+                {
+                    mCursor.updatePos(mCursorLocation);
+                    if (showControls)
+                    {
+                        showTime = showTime - pGameTime.ElapsedGameTime.Milliseconds;
+                        if (showTime < 0)
+                            showControls = false;
+                    }
+                }
+                else
+                {
+                    calculateCameraZoom();
+
+                    foreach (Player p in mPlayers)
+                    {
+                        p.update(pGameTime);
+                    }
+
+
+                    //OtherSystems
+                    mParticleManager.update(pGameTime);
+                    mBallManager.update(pGameTime);
+                    //mCollisionManager.update(pGameTime);
+                    mBG.update(pGameTime);
+
+                    //mCam.Zoom = count;
+                    //mCam.Pos = new Vector2(1, 5);
+                }
+            }
+
         }
 
         private void calculateCameraZoom()
